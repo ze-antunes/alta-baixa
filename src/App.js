@@ -16,12 +16,6 @@ function App() {
       <section>
         <h1>slide</h1>
       </section>
-      <section>
-        <h1>slide</h1>
-      </section>
-      <section>
-        <h1>slide</h1>
-      </section>
       <section className='test'>
         <Swiper />
       </section>
