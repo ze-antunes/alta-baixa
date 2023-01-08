@@ -1,0 +1,113 @@
+.card {
+    padding: 5px;
+    width: 500px;
+    height: 500px;
+    will-change: transform;
+
+    &__title {
+        font-size: 3em;
+    }
+
+    &__text {
+        font-size: 1em;
+
+        &--intro {
+            font-size: 2em;
+        }
+    }
+
+    .v1 {
+        max-width: 250px;
+    }
+
+    .v2 {
+        float: right;
+        text-align: end;
+        max-width: 300px;
+    }
+
+    .v3 {
+        margin-top: 200px;
+    }
+
+    .v4 {
+        text-align: end;
+    }
+
+    .v5 {
+        max-width: 250px;
+        margin-left: 125px;
+    }
+
+    .v6 {
+        margin-top: 300px;
+        text-align: end;
+    }
+}
+
+.vertical {
+    width: 200px;
+    height: fit-content;
+    position: absolute;
+}
+
+.horizontal {
+    width: 300px;
+    height: fit-content;
+    position: absolute;
+}
+
+.imgTest {
+    width: 100%;
+    height: auto;
+}
+
+.p1 {
+    top: -20px;
+    left: -300px;
+}
+
+.p2 {
+    top: -20px;
+    right: -300px;
+}
+
+.p3 {
+    top: 0px;
+    right: -330px;
+}
+
+.p4 {
+    top: -50px;
+    left: -350px;
+}
+
+.p5 {
+    top: 0px;
+    left: -300px;
+}
+
+.p6 {
+    top: 50px;
+    right: -300px;
+}
+
+.p7 {
+    top: -40px;
+    left: -250px;
+}
+
+.p8 {
+    top: 270px;
+    right: -270px;
+}
+
+.p9 {
+    top: -50px;
+    right: -250px;
+}
+
+.p10 {
+    top: 250px;
+    right: -350px;
+}
