@@ -79,7 +79,7 @@ $green: #409A89;
         /* Legacy iOS */
 }
 
-// -- SuisseInt
+// -- Inconstant
 @font-face {
         font-family: 'Inconstant';
         /* IE9 Compat Modes */
@@ -89,4 +89,11 @@ $green: #409A89;
                 /* Pretty Modern Browsers */
                 url('../fonts/Inconstant-Regular/InconstantVF.ttf') format('truetype'),
                 /* Safari, Android, iOS */
+}
+
+
+// -- CodeNext
+@font-face {
+        font-family: 'CodeNext';
+        src: url('../fonts/Fontfabric-Code-Next-ExtraBold.ttf') format('truetype')
 }

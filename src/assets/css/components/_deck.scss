@@ -1,4 +1,4 @@
-.test {
+.deck {
     background: rgb(255, 255, 255);
     position: absolute;
     overflow: hidden;
@@ -8,7 +8,7 @@
         auto;
 }
 
-.test>div {
+.deck>div {
     position: absolute;
     width: 100vw;
     height: 100vh;

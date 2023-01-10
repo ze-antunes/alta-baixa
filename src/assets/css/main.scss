@@ -8,8 +8,31 @@
     scroll-snap-type: y mandatory;
 }
 
+body {
+    overflow: overlay;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    opacity: 0;
+    backdrop-filter: blur(4px);
+}
+
+::-webkit-scrollbar {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #ccc;
+}
+
 @import "./components/section";
 @import "./components/video";
 @import "./components/deck";
 @import "./components/card";
 @import "./components/introTextVid";
+@import "./components/sidemenu";
+@import "./components/artigo-1";
+@import "./components/introMB";

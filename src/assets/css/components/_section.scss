@@ -2,14 +2,6 @@ section {
     scroll-snap-align: start;
     scroll-snap-stop: always;
     height: 100vh;
-
-    &:nth-of-type(odd) {
-        color: white;
-        background: black;
-    }
-
-    &:nth-of-type(even) {
-        color: black;
-        background: white;
-    }
+    color: black;
+    background: white;
 }
