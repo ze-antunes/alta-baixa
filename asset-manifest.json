@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/alta-baixa/static/css/main.ec2f8c22.css",
-    "main.js": "/alta-baixa/static/js/main.e7fb120f.js",
+    "main.css": "/alta-baixa/static/css/main.633b8a4c.css",
+    "main.js": "/alta-baixa/static/js/main.98a3a45c.js",
     "static/media/grade_da_ponte.mp4": "/alta-baixa/static/media/grade_da_ponte.4af08eb4472a208edd64.mp4",
     "static/media/image 4.png": "/alta-baixa/static/media/image 4.27e76de130aef36ac9b0.png",
     "static/media/image 3.png": "/alta-baixa/static/media/image 3.5b6bd53052f59ac403b0.png",
@@ -63,11 +63,11 @@
     "static/media/SuisseIntlMono-Bold-WebS.woff2": "/alta-baixa/static/media/SuisseIntlMono-Bold-WebS.c624fe6c5099c078887d.woff2",
     "static/media/n13.png": "/alta-baixa/static/media/n13.647c81c0e09c1b317283.png",
     "index.html": "/alta-baixa/index.html",
-    "main.ec2f8c22.css.map": "/alta-baixa/static/css/main.ec2f8c22.css.map",
-    "main.e7fb120f.js.map": "/alta-baixa/static/js/main.e7fb120f.js.map"
+    "main.633b8a4c.css.map": "/alta-baixa/static/css/main.633b8a4c.css.map",
+    "main.98a3a45c.js.map": "/alta-baixa/static/js/main.98a3a45c.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec2f8c22.css",
-    "static/js/main.e7fb120f.js"
+    "static/css/main.633b8a4c.css",
+    "static/js/main.98a3a45c.js"
   ]
 }
