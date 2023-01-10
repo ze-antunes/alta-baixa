@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/alta-baixa/static/css/main.dd1e0799.css",
-    "main.js": "/alta-baixa/static/js/main.db29028b.js",
+    "main.css": "/alta-baixa/static/css/main.ec2f8c22.css",
+    "main.js": "/alta-baixa/static/js/main.e7fb120f.js",
     "static/media/grade_da_ponte.mp4": "/alta-baixa/static/media/grade_da_ponte.4af08eb4472a208edd64.mp4",
     "static/media/image 4.png": "/alta-baixa/static/media/image 4.27e76de130aef36ac9b0.png",
     "static/media/image 3.png": "/alta-baixa/static/media/image 3.5b6bd53052f59ac403b0.png",
@@ -12,7 +12,10 @@
     "static/media/image 7.png": "/alta-baixa/static/media/image 7.dd61cb17531eeb5e3ef2.png",
     "static/media/image 5.png": "/alta-baixa/static/media/image 5.bb1ba102ba92399aa30b.png",
     "static/media/image 10.png": "/alta-baixa/static/media/image 10.e211cf8297926299acd0.png",
+    "static/media/grades.png": "/alta-baixa/static/media/grades.b5754fefe45818a84244.png",
     "static/media/image 1.png": "/alta-baixa/static/media/image 1.8fa6ef80fc944a8fdff3.png",
+    "static/media/bierut2.png": "/alta-baixa/static/media/bierut2.3bc4ac5d4b718af3adb4.png",
+    "static/media/Fontfabric-Code-Next-ExtraBold.ttf": "/alta-baixa/static/media/Fontfabric-Code-Next-ExtraBold.2a7f51ef336b942bf927.ttf",
     "static/media/InconstantVF.ttf": "/alta-baixa/static/media/InconstantVF.3f659affcb2756a315f0.ttf",
     "static/media/SuisseIntlMono-Thin-WebXL.svg": "/alta-baixa/static/media/SuisseIntlMono-Thin-WebXL.5c3a1fa1cca161d50cde.svg",
     "static/media/SuisseIntlMono-Bold-WebXL.svg": "/alta-baixa/static/media/SuisseIntlMono-Bold-WebXL.32a7abeaa0ea080dd109.svg",
@@ -60,11 +63,11 @@
     "static/media/SuisseIntlMono-Bold-WebS.woff2": "/alta-baixa/static/media/SuisseIntlMono-Bold-WebS.c624fe6c5099c078887d.woff2",
     "static/media/n13.png": "/alta-baixa/static/media/n13.647c81c0e09c1b317283.png",
     "index.html": "/alta-baixa/index.html",
-    "main.dd1e0799.css.map": "/alta-baixa/static/css/main.dd1e0799.css.map",
-    "main.db29028b.js.map": "/alta-baixa/static/js/main.db29028b.js.map"
+    "main.ec2f8c22.css.map": "/alta-baixa/static/css/main.ec2f8c22.css.map",
+    "main.e7fb120f.js.map": "/alta-baixa/static/js/main.e7fb120f.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd1e0799.css",
-    "static/js/main.db29028b.js"
+    "static/css/main.ec2f8c22.css",
+    "static/js/main.e7fb120f.js"
   ]
 }
