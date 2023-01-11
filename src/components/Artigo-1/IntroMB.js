@@ -11,7 +11,9 @@ const IntroMB = () => {
                     Between 1980 and 1990, most of my
                     projects were set in five fonts: Helvetica (naturally),
                     Futura, Garamond No. 3, Century Expanded, and, of course, Bodoni.
-                    <br />
+                </p>
+                <br />
+                <p>
                     For Massimo, this was an ideological
                     choice, an ethical imperative. “In
                     the new computer age,” he once wrote,
@@ -32,7 +34,7 @@ const IntroMB = () => {
                 </p>
             </div>
             <div className="imgs">
-                <img src={require('../assets/imgs/artigo1/grades.png')} alt="grades" />
+                <img src={require('../../assets/imgs/artigo1/grades.png')} alt="grades" />
             </div>
             <div className="text2">
                 <p>
@@ -45,7 +47,9 @@ const IntroMB = () => {
                     I become more discriminating and come
                     up with some answers to this seemingly
                     simple question: why choose a particular typeface? Here are thirteen reasons.
-                    <br />
+                </p>
+                <br />
+                <p>
                     Then, after a decade, I left my first
                     job. Suddenly I could use any typeface I wanted, and
                     I went nuts. On one of my first projects, I used 37 different fonts on 16

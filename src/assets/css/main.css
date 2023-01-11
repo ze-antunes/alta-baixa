@@ -433,6 +433,17 @@ video {
   font-size: 22px;
 }
 
+.negativeCursor {
+  width: 20px;
+  height: 20px;
+  background: #040504;
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  z-index: 15;
+}
+
 .artMB {
   width: 100%;
   height: 100%;
@@ -451,6 +462,7 @@ video {
 }
 .artMB .title {
   font-size: 55px;
+  line-height: 60px;
 }
 .artMB .imgMB {
   width: 100%;
@@ -483,12 +495,349 @@ video {
   align-self: center;
 }
 .introMB .imgs img {
+  position: relative;
   height: 100%;
   width: auto;
   overflow: hidden;
+  left: -20px;
 }
 .introMB .text2 {
   width: 33%;
   height: 100%;
   padding: 80px 50px 0px 120px;
+}
+
+.art01 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+.art01 .numbTitle {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.art01 .numbTitle img {
+  margin: 100px 0;
+  width: 90px;
+  height: auto;
+}
+.art01 .numbTitle p {
+  font-family: "CodeNext";
+  font-size: 45px;
+  line-height: 50px;
+}
+.art01 .imgs {
+  width: 30%;
+  height: 100%;
+  position: relative;
+}
+.art01 .imgs .img1 {
+  position: absolute;
+  height: 100%;
+  width: auto;
+}
+.art01 .imgs .img2 {
+  position: absolute;
+  top: 100px;
+  right: -150px;
+  height: auto;
+  width: 400px;
+}
+.art01 .text {
+  width: 40%;
+  height: 100%;
+  display: flex;
+}
+.art01 .text p {
+  margin-left: 100px;
+  padding: 150px;
+}
+
+.art02 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+.art02 .numbTitle {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 40px;
+}
+.art02 .numbTitle img {
+  margin: 50px 50px;
+  width: 90px;
+  height: auto;
+  align-self: flex-end;
+}
+.art02 .numbTitle p {
+  font-family: "CodeNext";
+  font-size: 45px;
+  line-height: 50px;
+}
+.art02 .imgs {
+  width: 30%;
+  height: 100%;
+  position: relative;
+}
+.art02 .imgs .img1 {
+  position: absolute;
+  height: 100%;
+  width: auto;
+}
+.art02 .imgs .img2 {
+  position: absolute;
+  top: 50px;
+  right: -350px;
+  height: auto;
+  width: 500px;
+}
+.art02 .text {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  padding: 50px;
+}
+
+.art02 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+.art02 .numbTitle {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 40px;
+}
+.art02 .numbTitle img {
+  margin: 50px 50px;
+  width: 90px;
+  height: auto;
+  align-self: flex-end;
+}
+.art02 .numbTitle p {
+  font-family: "CodeNext";
+  font-size: 45px;
+  line-height: 50px;
+}
+.art02 .imgs {
+  width: 30%;
+  height: 100%;
+  position: relative;
+}
+.art02 .imgs .img1 {
+  position: absolute;
+  height: 100%;
+  width: auto;
+}
+.art02 .imgs .img2 {
+  position: absolute;
+  top: 50px;
+  right: -350px;
+  height: auto;
+  width: 500px;
+}
+.art02 .text {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  padding: 50px;
+}
+
+.art03 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+.art03 .numbTitle {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.art03 .numbTitle img {
+  margin: 50px 50px;
+  width: 90px;
+  height: auto;
+}
+.art03 .numbTitle p {
+  font-family: "CodeNext";
+  font-size: 45px;
+  line-height: 50px;
+}
+.art03 .imgs {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+.art03 .imgs .img1 {
+  position: absolute;
+  height: 100%;
+  width: auto;
+}
+.art03 .imgs .img2 {
+  position: absolute;
+  top: 50px;
+  height: auto;
+  width: 500px;
+}
+.art03 .text {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  padding: 50px 200px 50px 50px;
+}
+
+.art04 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+.art04 .numbTitle {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+}
+.art04 .numbTitle img {
+  margin-left: 50px;
+  margin-top: 100px;
+  width: 90px;
+  height: 90px;
+}
+.art04 .numbTitle p {
+  width: 700px;
+  font-family: "CodeNext";
+  font-size: 45px;
+  line-height: 50px;
+  margin-left: 50px;
+}
+.art04 .imgs {
+  width: 30%;
+  height: 100%;
+  position: relative;
+}
+.art04 .imgs .img1 {
+  position: absolute;
+  bottom: -200px;
+  left: -600px;
+  height: 100%;
+  width: auto;
+  transform: rotate(90deg);
+}
+.art04 .imgs .img2 {
+  position: absolute;
+  top: 50px;
+  right: -400px;
+  height: auto;
+  width: 500px;
+}
+.art04 .imgs .img3 {
+  position: absolute;
+  bottom: 50px;
+  left: -200px;
+  height: auto;
+  width: 500px;
+}
+.art04 .text {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 285px;
+  padding: 50px 200px 50px 50px;
+}
+
+.art05 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+.art05 .left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.art05 .left img {
+  margin-left: 50px;
+  margin-top: 100px;
+  width: 90px;
+  height: 90px;
+}
+.art05 .left .title {
+  width: 700px;
+  font-family: "CodeNext";
+  font-size: 45px;
+  line-height: 50px;
+  margin-left: 50px;
+}
+.art05 .imgs {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.art05 .imgs .img1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.art05 .imgs .img2 {
+  position: absolute;
+  height: auto;
+  width: 500px;
+}
+
+.outroMB {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+.outroMB .img {
+  width: 50%;
+  height: 100%;
+}
+.outroMB .img img {
+  position: relative;
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+}
+.outroMB .text {
+  padding: 60px 60px 60px 120px;
+  font-family: "CodeNext";
+  font-size: 100px;
+  line-height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */

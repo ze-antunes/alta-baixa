@@ -2,8 +2,14 @@ import React, { Component } from "react";
 import Deck from "./components/Deck";
 import video from './assets/videos/grade_da_ponte.mp4';
 import { SideMenu } from "./components/SideMenu";
-import ArtMB from "./components/ArtMB";
-import IntroMB from "./components/IntroMB";
+import ArtMB from "./components/Artigo-1/ArtMB";
+import IntroMB from "./components/Artigo-1/IntroMB";
+import Art01 from "./components/Artigo-1/Art01";
+import Art02 from "./components/Artigo-1/Art02";
+import Art03 from "./components/Artigo-1/Art03";
+import Art04 from "./components/Artigo-1/Art04";
+import OutroMB from "./components/Artigo-1/OutroMB";
+import Art05 from "./components/Artigo-1/Art05";
 
 class App extends Component {
   render() {
@@ -23,19 +29,19 @@ class App extends Component {
           <IntroMB />
         </section>
         <section id="artigo1-01">
-          <h1>01 Because it works.</h1>
+          <Art01 />
         </section>
         <section id="artigo1-02">
-          <h1>02 Because you like its history.</h1>
+          <Art02 />
         </section>
         <section id="artigo1-03">
-          <h1>03 Because you like its name.</h1>
+          <Art03 />
         </section>
         <section id="artigo1-04">
-          <h1>04 Because of who designed it.</h1>
+          <Art04 />
         </section>
         <section id="artigo1-05">
-          <h1>05 Because it was there.</h1>
+          <Art05 />
         </section>
         <section id="artigo1-06">
           <h1>06 Because they made you.</h1>
@@ -62,7 +68,7 @@ class App extends Component {
           <h1>13 Because you can't not.</h1>
         </section>
         <section id="artigo1-outro">
-          <h1>The book is beautiful, by the way, and not the least bit slutty. </h1>
+          <OutroMB />
         </section>
         <section id="artigo2">
           <div className="deck">

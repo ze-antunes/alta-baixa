@@ -1,0 +1,29 @@
+.outroMB {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+
+    .img{
+        width: 50%;
+        height: 100%;
+
+        img {
+            position: relative;
+            height: 100%;
+            width: auto;
+            overflow: hidden;
+        }
+    }
+
+    .text{
+        padding: 60px 60px 60px 120px;
+        font-family: 'CodeNext';
+        font-size: 100px;
+        line-height: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

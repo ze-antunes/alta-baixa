@@ -8,7 +8,7 @@ const ArtMB = () => {
                 <p className='title'>Thirteen Ways of Looking at a Typeface</p>
             </div>
             <div className='imgMB'>
-                <img src={require('../assets/imgs/artigo1/bierut2.png')} alt="Michael Bierut" />
+                <img src={require('../../assets/imgs/artigo1/bierut2.png')} alt="Michael Bierut" />
             </div>
         </div>
     )
