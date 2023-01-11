@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/alta-baixa/static/css/main.440d030d.css",
-    "main.js": "/alta-baixa/static/js/main.a5bc7156.js",
+    "main.js": "/alta-baixa/static/js/main.98a3a45c.js",
     "static/media/grade_da_ponte.mp4": "/alta-baixa/static/media/grade_da_ponte.4af08eb4472a208edd64.mp4",
     "static/media/image 4.png": "/alta-baixa/static/media/image 4.27e76de130aef36ac9b0.png",
     "static/media/image 3.png": "/alta-baixa/static/media/image 3.5b6bd53052f59ac403b0.png",
@@ -64,10 +64,10 @@
     "static/media/n13.png": "/alta-baixa/static/media/n13.647c81c0e09c1b317283.png",
     "index.html": "/alta-baixa/index.html",
     "main.440d030d.css.map": "/alta-baixa/static/css/main.440d030d.css.map",
-    "main.a5bc7156.js.map": "/alta-baixa/static/js/main.a5bc7156.js.map"
+    "main.98a3a45c.js.map": "/alta-baixa/static/js/main.98a3a45c.js.map"
   },
   "entrypoints": [
     "static/css/main.440d030d.css",
-    "static/js/main.a5bc7156.js"
+    "static/js/main.98a3a45c.js"
   ]
 }
