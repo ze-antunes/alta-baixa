@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/alta-baixa/static/css/main.ee5e5381.css",
-    "main.js": "/alta-baixa/static/js/main.56445941.js",
+    "main.css": "/alta-baixa/static/css/main.0c86bd99.css",
+    "main.js": "/alta-baixa/static/js/main.3d7685b3.js",
     "static/media/grade_da_ponte.mp4": "/alta-baixa/static/media/grade_da_ponte.4af08eb4472a208edd64.mp4",
     "static/media/pinup.png": "/alta-baixa/static/media/pinup.5b1b2c7c75dd6329c11b.png",
     "static/media/image 4.png": "/alta-baixa/static/media/image 4.27e76de130aef36ac9b0.png",
@@ -22,6 +22,7 @@
     "static/media/Fontfabric-Code-Next-ExtraBold.ttf": "/alta-baixa/static/media/Fontfabric-Code-Next-ExtraBold.2a7f51ef336b942bf927.ttf",
     "static/media/grade3.png": "/alta-baixa/static/media/grade3.3dd0191a779fc652d685.png",
     "static/media/grade2.png": "/alta-baixa/static/media/grade2.795e57a160d81fdebe68.png",
+    "static/media/5.2.png": "/alta-baixa/static/media/5.2.28946e957f9b1f8b8793.png",
     "static/media/grade4.png": "/alta-baixa/static/media/grade4.40136c327ec0f81ffdf7.png",
     "static/media/InconstantVF.ttf": "/alta-baixa/static/media/InconstantVF.3f659affcb2756a315f0.ttf",
     "static/media/4.2_2.png": "/alta-baixa/static/media/4.2_2.8789313ced72f5a6be1e.png",
@@ -74,11 +75,11 @@
     "static/media/SuisseIntlMono-Bold-WebS.woff2": "/alta-baixa/static/media/SuisseIntlMono-Bold-WebS.c624fe6c5099c078887d.woff2",
     "static/media/n13.png": "/alta-baixa/static/media/n13.647c81c0e09c1b317283.png",
     "index.html": "/alta-baixa/index.html",
-    "main.ee5e5381.css.map": "/alta-baixa/static/css/main.ee5e5381.css.map",
-    "main.56445941.js.map": "/alta-baixa/static/js/main.56445941.js.map"
+    "main.0c86bd99.css.map": "/alta-baixa/static/css/main.0c86bd99.css.map",
+    "main.3d7685b3.js.map": "/alta-baixa/static/js/main.3d7685b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee5e5381.css",
-    "static/js/main.56445941.js"
+    "static/css/main.0c86bd99.css",
+    "static/js/main.3d7685b3.js"
   ]
 }
