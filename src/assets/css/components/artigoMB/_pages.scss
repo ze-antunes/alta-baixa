@@ -11,13 +11,18 @@
 .art11,
 .art12,
 .art13 {
-    .numbTitle, .left, .right, .bottom {
+
+    .numbTitle,
+    .left,
+    .right,
+    .bottom {
         a {
             overflow: hidden;
             position: relative;
             display: inline-block;
-            user-select: none;            
+            user-select: none;
             color: $black;
+            cursor: default;
         }
 
         a::before,
@@ -55,6 +60,11 @@
         a:hover span {
             transform: translate3d(-200%, 0, 0);
         }
+    }
+
+    .text {
+        font-family: 'SuisseInt';
+        font-size: 13px;
     }
 }
 
@@ -301,7 +311,7 @@
         display: flex;
         flex-direction: column;
         margin-top: 285px;
-        padding: 50px 200px 50px 50px;
+        padding: 45px 150px 50px 50px;
     }
 }
 

@@ -488,6 +488,8 @@ video {
   width: 33%;
   height: 100%;
   padding: 80px 80px;
+  font-family: "SuisseInt";
+  font-size: 13px;
 }
 .introMB .imgs {
   width: 33%;
@@ -505,9 +507,14 @@ video {
   width: 33%;
   height: 100%;
   padding: 80px 50px 0px 120px;
+  font-family: "SuisseInt";
+  font-size: 13px;
 }
 
-.art01 .numbTitle a, .art01 .left a, .art01 .right a, .art01 .bottom a,
+.art01 .numbTitle a,
+.art01 .left a,
+.art01 .right a,
+.art01 .bottom a,
 .art02 .numbTitle a,
 .art02 .left a,
 .art02 .right a,
@@ -564,11 +571,15 @@ video {
       -ms-user-select: none;
           user-select: none;
   color: #040504;
+  cursor: default;
 }
 .art01 .numbTitle a::before,
-.art01 .numbTitle a::after, .art01 .left a::before,
-.art01 .left a::after, .art01 .right a::before,
-.art01 .right a::after, .art01 .bottom a::before,
+.art01 .numbTitle a::after,
+.art01 .left a::before,
+.art01 .left a::after,
+.art01 .right a::before,
+.art01 .right a::after,
+.art01 .bottom a::before,
 .art01 .bottom a::after,
 .art02 .numbTitle a::before,
 .art02 .numbTitle a::after,
@@ -671,7 +682,10 @@ video {
   width: 100%;
   left: 0;
 }
-.art01 .numbTitle a::after, .art01 .left a::after, .art01 .right a::after, .art01 .bottom a::after,
+.art01 .numbTitle a::after,
+.art01 .left a::after,
+.art01 .right a::after,
+.art01 .bottom a::after,
 .art02 .numbTitle a::after,
 .art02 .left a::after,
 .art02 .right a::after,
@@ -728,7 +742,10 @@ video {
   transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
   color: #409A89;
 }
-.art01 .numbTitle a:hover::before, .art01 .left a:hover::before, .art01 .right a:hover::before, .art01 .bottom a:hover::before,
+.art01 .numbTitle a:hover::before,
+.art01 .left a:hover::before,
+.art01 .right a:hover::before,
+.art01 .bottom a:hover::before,
 .art02 .numbTitle a:hover::before,
 .art02 .left a:hover::before,
 .art02 .right a:hover::before,
@@ -780,7 +797,10 @@ video {
   transform-origin: 0% 50%;
   transform: scaleX(1);
 }
-.art01 .numbTitle a:hover::after, .art01 .left a:hover::after, .art01 .right a:hover::after, .art01 .bottom a:hover::after,
+.art01 .numbTitle a:hover::after,
+.art01 .left a:hover::after,
+.art01 .right a:hover::after,
+.art01 .bottom a:hover::after,
 .art02 .numbTitle a:hover::after,
 .art02 .left a:hover::after,
 .art02 .right a:hover::after,
@@ -831,7 +851,10 @@ video {
 .art13 .bottom a:hover::after {
   transform: translate3d(0, 0, 0);
 }
-.art01 .numbTitle a span, .art01 .left a span, .art01 .right a span, .art01 .bottom a span,
+.art01 .numbTitle a span,
+.art01 .left a span,
+.art01 .right a span,
+.art01 .bottom a span,
 .art02 .numbTitle a span,
 .art02 .left a span,
 .art02 .right a span,
@@ -883,7 +906,10 @@ video {
   display: inline-block;
   transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
 }
-.art01 .numbTitle a:hover span, .art01 .left a:hover span, .art01 .right a:hover span, .art01 .bottom a:hover span,
+.art01 .numbTitle a:hover span,
+.art01 .left a:hover span,
+.art01 .right a:hover span,
+.art01 .bottom a:hover span,
 .art02 .numbTitle a:hover span,
 .art02 .left a:hover span,
 .art02 .right a:hover span,
@@ -933,6 +959,22 @@ video {
 .art13 .right a:hover span,
 .art13 .bottom a:hover span {
   transform: translate3d(-200%, 0, 0);
+}
+.art01 .text,
+.art02 .text,
+.art03 .text,
+.art04 .text,
+.art05 .text,
+.art06 .text,
+.art07 .text,
+.art08 .text,
+.art09 .text,
+.art10 .text,
+.art11 .text,
+.art12 .text,
+.art13 .text {
+  font-family: "SuisseInt";
+  font-size: 13px;
 }
 
 .art01 {
@@ -1146,7 +1188,7 @@ video {
   display: flex;
   flex-direction: column;
   margin-top: 285px;
-  padding: 50px 200px 50px 50px;
+  padding: 45px 150px 50px 50px;
 }
 
 .art05 {

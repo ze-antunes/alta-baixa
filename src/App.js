@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Deck from "./components/Deck";
 import video from './assets/videos/grade_da_ponte.mp4';
+import video2 from './assets/videos/aB_Div_Section.mp4';
 import { SideMenu } from "./components/SideMenu";
 import ArtMB from "./components/Artigo-1/ArtMB";
 import IntroMB from "./components/Artigo-1/IntroMB";
@@ -77,6 +78,9 @@ class App extends Component {
         </section>
         <section id="artigo1-outro">
           <OutroMB />
+        </section>
+        <section>
+          <video src={video2} autoPlay loop muted />
         </section>
         <section id="artigo2">
           <div className="deck">
