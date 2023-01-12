@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/alta-baixa/static/css/main.2d323c5c.css",
-    "main.js": "/alta-baixa/static/js/main.cdba5f14.js",
+    "main.css": "/alta-baixa/static/css/main.09b5a945.css",
+    "main.js": "/alta-baixa/static/js/main.4554f5a1.js",
     "static/media/grade_da_ponte.mp4": "/alta-baixa/static/media/grade_da_ponte.4af08eb4472a208edd64.mp4",
+    "static/media/12.2.png": "/alta-baixa/static/media/12.2.08d9b15554a0353b5c7c.png",
     "static/media/pinup.png": "/alta-baixa/static/media/pinup.5b1b2c7c75dd6329c11b.png",
     "static/media/image 4.png": "/alta-baixa/static/media/image 4.27e76de130aef36ac9b0.png",
     "static/media/image 3.png": "/alta-baixa/static/media/image 3.5b6bd53052f59ac403b0.png",
@@ -17,6 +18,8 @@
     "static/media/image 1.png": "/alta-baixa/static/media/image 1.8fa6ef80fc944a8fdff3.png",
     "static/media/grade9.png": "/alta-baixa/static/media/grade9.58ad2a4b0c0d029e1666.png",
     "static/media/grade5.png": "/alta-baixa/static/media/grade5.2a902252909fd5bb9677.png",
+    "static/media/grade10.png": "/alta-baixa/static/media/grade10.e9ce6e151dd4615c30bb.png",
+    "static/media/grade12.png": "/alta-baixa/static/media/grade12.4014de8bd9f3ec92096b.png",
     "static/media/grade1.png": "/alta-baixa/static/media/grade1.5b28dae4e198777da300.png",
     "static/media/grade6.png": "/alta-baixa/static/media/grade6.a3759eb6697dd85601bd.png",
     "static/media/bierut2.png": "/alta-baixa/static/media/bierut2.3bc4ac5d4b718af3adb4.png",
@@ -25,9 +28,12 @@
     "static/media/grade3.png": "/alta-baixa/static/media/grade3.3dd0191a779fc652d685.png",
     "static/media/grade8.png": "/alta-baixa/static/media/grade8.16feaefb5883724e1fa9.png",
     "static/media/grade7.png": "/alta-baixa/static/media/grade7.06cb14dece706369e0d6.png",
+    "static/media/grade11.png": "/alta-baixa/static/media/grade11.3d810afe6bc10e19e81c.png",
+    "static/media/grade13.png": "/alta-baixa/static/media/grade13.b7b6c16c92c4e1a46ffd.png",
     "static/media/grade2.png": "/alta-baixa/static/media/grade2.795e57a160d81fdebe68.png",
     "static/media/5.2.png": "/alta-baixa/static/media/5.2.28946e957f9b1f8b8793.png",
     "static/media/7.2.png": "/alta-baixa/static/media/7.2.745fcd2c72dd1be82cef.png",
+    "static/media/10.2.png": "/alta-baixa/static/media/10.2.e1019ac15462ec92b939.png",
     "static/media/grade4.png": "/alta-baixa/static/media/grade4.40136c327ec0f81ffdf7.png",
     "static/media/InconstantVF.ttf": "/alta-baixa/static/media/InconstantVF.3f659affcb2756a315f0.ttf",
     "static/media/8.2_1.png": "/alta-baixa/static/media/8.2_1.6391ca21f4c8fe6658a6.png",
@@ -36,6 +42,7 @@
     "static/media/SuisseIntlMono-Bold-WebXL.svg": "/alta-baixa/static/media/SuisseIntlMono-Bold-WebXL.32a7abeaa0ea080dd109.svg",
     "static/media/SuisseIntlMono-Regular-WebXL.svg": "/alta-baixa/static/media/SuisseIntlMono-Regular-WebXL.28cddd97acf7dd64df6d.svg",
     "static/media/6.2_2.png": "/alta-baixa/static/media/6.2_2.86d60bb3e7615d30c576.png",
+    "static/media/11.2.png": "/alta-baixa/static/media/11.2.ebc7b2f427a6ee2b42fb.png",
     "static/media/8.2_2.png": "/alta-baixa/static/media/8.2_2.f17b40ff3292b4356d93.png",
     "static/media/2.2_1.png": "/alta-baixa/static/media/2.2_1.1169c92534ac4d6d6f5a.png",
     "static/media/n8.png": "/alta-baixa/static/media/n8.a25e704c14b58e436ac3.png",
@@ -50,6 +57,7 @@
     "static/media/4.2_1.png": "/alta-baixa/static/media/4.2_1.fc3206906aefd6536629.png",
     "static/media/n2.png": "/alta-baixa/static/media/n2.af89161d03852b1633fa.png",
     "static/media/n3.png": "/alta-baixa/static/media/n3.feab23bac3080e86e87b.png",
+    "static/media/13.2.png": "/alta-baixa/static/media/13.2.d45703559634c3a87fbc.png",
     "static/media/n10.png": "/alta-baixa/static/media/n10.20ede686eb0a01742143.png",
     "static/media/n7.png": "/alta-baixa/static/media/n7.4b5ac65e4f28240995d3.png",
     "static/media/Inconstant-Base25.woff": "/alta-baixa/static/media/Inconstant-Base25.cfe0fb49ba4692e2a1a5.woff",
@@ -86,11 +94,11 @@
     "static/media/SuisseIntlMono-Bold-WebS.woff2": "/alta-baixa/static/media/SuisseIntlMono-Bold-WebS.c624fe6c5099c078887d.woff2",
     "static/media/n13.png": "/alta-baixa/static/media/n13.647c81c0e09c1b317283.png",
     "index.html": "/alta-baixa/index.html",
-    "main.2d323c5c.css.map": "/alta-baixa/static/css/main.2d323c5c.css.map",
-    "main.cdba5f14.js.map": "/alta-baixa/static/js/main.cdba5f14.js.map"
+    "main.09b5a945.css.map": "/alta-baixa/static/css/main.09b5a945.css.map",
+    "main.4554f5a1.js.map": "/alta-baixa/static/js/main.4554f5a1.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d323c5c.css",
-    "static/js/main.cdba5f14.js"
+    "static/css/main.09b5a945.css",
+    "static/js/main.4554f5a1.js"
   ]
 }
