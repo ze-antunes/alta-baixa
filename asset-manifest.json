@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/alta-baixa/static/css/main.7af766f8.css",
+    "main.css": "/alta-baixa/static/css/main.acf3d7ce.css",
     "main.js": "/alta-baixa/static/js/main.23566b4f.js",
     "static/media/grade_da_ponte.mp4": "/alta-baixa/static/media/grade_da_ponte.4af08eb4472a208edd64.mp4",
     "static/media/aB_Div_Section.mp4": "/alta-baixa/static/media/aB_Div_Section.a4a975c2810d97e4071c.mp4",
@@ -95,11 +95,11 @@
     "static/media/SuisseIntlMono-Bold-WebS.woff2": "/alta-baixa/static/media/SuisseIntlMono-Bold-WebS.c624fe6c5099c078887d.woff2",
     "static/media/n13.png": "/alta-baixa/static/media/n13.647c81c0e09c1b317283.png",
     "index.html": "/alta-baixa/index.html",
-    "main.7af766f8.css.map": "/alta-baixa/static/css/main.7af766f8.css.map",
+    "main.acf3d7ce.css.map": "/alta-baixa/static/css/main.acf3d7ce.css.map",
     "main.23566b4f.js.map": "/alta-baixa/static/js/main.23566b4f.js.map"
   },
   "entrypoints": [
-    "static/css/main.7af766f8.css",
+    "static/css/main.acf3d7ce.css",
     "static/js/main.23566b4f.js"
   ]
 }
