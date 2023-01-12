@@ -8,7 +8,7 @@ const Art10 = () => {
         <img className='img1' src={require('../../assets/imgs/artigo1/grade10.png')} alt="grade10" />
       </div>
       <div className='right'>
-        <p className='title'>Because it’s boring.</p>
+        <p className='title'>Because <a href="#artigo1-10" id="style-2" data-replace="it’s boring."><span>it’s boring.</span></a></p>
         <div className='text'>
           <p>
             Tibor Kalman was fascinated with boring typefaces. “No, this one is too

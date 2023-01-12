@@ -9,8 +9,8 @@ const Art06 = () => {
         <img className='img1' src={require('../../assets/imgs/artigo1/grade6.png')} alt="grade6" />
       </div>
       <div className='right'>
-        <div>
-          <p className='title'>Because they made you.</p>
+        <div className='hover'>
+          <p className='title'>Because <a href="#artigo1-06" id="style-2" data-replace="they made you."><span>they made you.</span></a></p>
           <img src={require('../../assets/imgs/artigo1/n6.png')} alt="06" />
         </div>
         <div className='text'>

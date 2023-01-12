@@ -5,7 +5,7 @@ const Art09 = () => {
     <div className='art09'>
       <div className='left'>
         <img src={require('../../assets/imgs/artigo1/n9.png')} alt="09" />
-        <p className='title'>Because it’s ugly.</p>
+        <p className='title'>Because <a href="#artigo1-09" id="style-2" data-replace=" it’s ugly."><span> it’s ugly.</span></a></p>
         <div className='text'>
           <p>
             About 10 years ago, I was asked to redesign the logo

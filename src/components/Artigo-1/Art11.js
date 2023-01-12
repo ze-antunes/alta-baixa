@@ -5,7 +5,7 @@ const Art11 = () => {
     <div className='art11'>
       <div className='numbTitle'>
         <img src={require('../../assets/imgs/artigo1/n11.png')} alt="11" />
-        <p className='title'>Because it’s special.</p>
+        <p className='title'>Because <a href="#artigo1-11" id="style-2" data-replace="it’s special."><span>it’s special.</span></a></p>
       </div>
       <div className='imgs'>
         <img className='img2' src={require('../../assets/imgs/artigo1/11.2.png')} alt="img11.2" />
