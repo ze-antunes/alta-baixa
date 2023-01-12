@@ -5,8 +5,8 @@ const Art05 = () => {
     <div className='art05'>
       <div className='left'>
         <div>
+        <img src={require('../../assets/imgs/artigo1/n5.png')} alt="05" />
           <p className='title'>Because it was there.</p>
-          <img src={require('../../assets/imgs/artigo1/n5.png')} alt="05" />
         </div>
         <div className='text'>
           <p>
@@ -21,7 +21,7 @@ const Art05 = () => {
         </div>
       </div>
       <div className='imgs'>
-        <img className='img2' src={require('../../assets/imgs/artigo1/4.2_2.png')} alt="img3" />
+        <img className='img2' src={require('../../assets/imgs/artigo1/5.2.png')} alt="img5" />
         <img className='img1' src={require('../../assets/imgs/artigo1/grade5.png')} alt="grade5" />
       </div>
     </div>

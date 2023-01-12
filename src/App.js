@@ -8,8 +8,16 @@ import Art01 from "./components/Artigo-1/Art01";
 import Art02 from "./components/Artigo-1/Art02";
 import Art03 from "./components/Artigo-1/Art03";
 import Art04 from "./components/Artigo-1/Art04";
-import OutroMB from "./components/Artigo-1/OutroMB";
 import Art05 from "./components/Artigo-1/Art05";
+import Art06 from "./components/Artigo-1/Art06";
+import Art07 from "./components/Artigo-1/Art07";
+import Art08 from "./components/Artigo-1/Art08";
+import Art09 from "./components/Artigo-1/Art09";
+import Art10 from "./components/Artigo-1/Art10";
+import Art11 from "./components/Artigo-1/Art11";
+import Art12 from "./components/Artigo-1/Art12";
+import Art13 from "./components/Artigo-1/Art13";
+import OutroMB from "./components/Artigo-1/OutroMB";
 
 class App extends Component {
   render() {
@@ -44,28 +52,28 @@ class App extends Component {
           <Art05 />
         </section>
         <section id="artigo1-06">
-          <h1>06 Because they made you.</h1>
+          <Art06 />
         </section>
         <section id="artigo1-07">
-          <h1>07 Because it reminds you of something.</h1>
+          <Art07 />
         </section>
         <section id="artigo1-08">
-          <h1>08 Because it’s beautiful.</h1>
+          <Art08 />
         </section>
         <section id="artigo1-09">
-          <h1>09 Because it’s ugly.</h1>
+          <Art09 />
         </section>
         <section id="artigo1-10">
-          <h1>10 Because it’s boring.</h1>
+          <Art10 />
         </section>
         <section id="artigo1-11">
-          <h1>11 Because it’s special.</h1>
+          <Art11 />
         </section>
         <section id="artigo1-12">
-          <h1>12 Because you believe in it.</h1>
+          <Art12 />
         </section>
         <section id="artigo1-13">
-          <h1>13 Because you can't not.</h1>
+          <Art13 />
         </section>
         <section id="artigo1-outro">
           <OutroMB />

@@ -331,7 +331,7 @@ video {
   height: fit-content;
   overflow-y: scroll;
   max-height: calc(100% - 70px);
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.6);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   pointer-events: auto;
@@ -609,58 +609,6 @@ video {
   padding: 50px;
 }
 
-.art02 {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  display: flex;
-}
-.art02 .numbTitle {
-  width: 30%;
-  height: 100%;
-  display: flex;
-  flex-direction: column-reverse;
-  padding: 40px;
-}
-.art02 .numbTitle img {
-  margin: 50px 50px;
-  width: 90px;
-  height: auto;
-  align-self: flex-end;
-}
-.art02 .numbTitle p {
-  font-family: "CodeNext";
-  font-size: 45px;
-  line-height: 50px;
-}
-.art02 .imgs {
-  width: 30%;
-  height: 100%;
-  position: relative;
-}
-.art02 .imgs .img1 {
-  position: absolute;
-  height: 100%;
-  width: auto;
-}
-.art02 .imgs .img2 {
-  position: absolute;
-  top: 50px;
-  right: -350px;
-  height: auto;
-  width: 500px;
-}
-.art02 .text {
-  width: 40%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 100px;
-  padding: 50px;
-}
-
 .art03 {
   width: 100%;
   height: 100%;
@@ -780,7 +728,7 @@ video {
   display: flex;
 }
 .art05 .left {
-  width: 50%;
+  width: 40%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -798,9 +746,14 @@ video {
   font-size: 45px;
   line-height: 50px;
   margin-left: 50px;
+  margin-top: 50px;
+}
+.art05 .left .text {
+  margin-top: 100px;
+  margin-left: 50px;
 }
 .art05 .imgs {
-  width: 50%;
+  width: 60%;
   height: 100%;
   position: relative;
 }
@@ -813,6 +766,462 @@ video {
   position: absolute;
   height: auto;
   width: 500px;
+  left: 10px;
+}
+
+.art06 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+.art06 .right {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  position: relative;
+}
+.art06 .right img {
+  margin: 0px 50px 0px 0;
+  width: 90px;
+  height: 90px;
+  float: right;
+}
+.art06 .right .title {
+  font-family: "CodeNext";
+  font-size: 45px;
+  line-height: 50px;
+  padding: 50px;
+}
+.art06 .right .text {
+  margin-top: 150px;
+}
+.art06 .imgs {
+  width: 60%;
+  height: 100%;
+  position: relative;
+}
+.art06 .imgs .img1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.art06 .imgs .img2 {
+  position: absolute;
+  height: auto;
+  width: 500px;
+  left: 150px;
+}
+.art06 .imgs .img3 {
+  position: absolute;
+  height: auto;
+  width: 500px;
+  top: 400px;
+}
+
+.art07 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+.art07 .numbTitle {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  justify-content: flex-end;
+}
+.art07 .numbTitle img {
+  margin-bottom: 300px;
+  width: 90px;
+  height: auto;
+}
+.art07 .numbTitle p {
+  font-family: "CodeNext";
+  width: 500px;
+  font-size: 45px;
+  line-height: 50px;
+}
+.art07 .imgs {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+.art07 .imgs .img1 {
+  position: absolute;
+  height: 100%;
+  width: auto;
+  left: 150px;
+}
+.art07 .imgs .img2 {
+  position: absolute;
+  top: 50px;
+  left: -50px;
+  height: auto;
+  width: 400px;
+}
+.art07 .text {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px 0 0px;
+}
+
+.art08 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+.art08 .numbTitle {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.art08 .numbTitle img {
+  width: 90px;
+  height: auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.art08 .numbTitle p {
+  font-family: "CodeNext";
+  width: 500px;
+  font-size: 45px;
+  line-height: 50px;
+}
+.art08 .imgs {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+.art08 .imgs .img1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: -100px;
+}
+.art08 .imgs .img2 {
+  position: absolute;
+  top: 50px;
+  right: -200px;
+  height: auto;
+  width: 550px;
+}
+.art08 .imgs .img3 {
+  position: absolute;
+  top: 420px;
+  left: -300px;
+  height: auto;
+  width: 400px;
+}
+.art08 .text {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 525px 50px 0 0px;
+}
+
+.art09 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+.art09 .left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.art09 .left img {
+  width: 90px;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  align-self: flex-end;
+  margin-right: 100px;
+}
+.art09 .left .title {
+  font-family: "CodeNext";
+  width: 500px;
+  font-size: 45px;
+  line-height: 50px;
+}
+.art09 .left .text {
+  padding: 50px 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.art09 .imgs {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.art09 .imgs .img1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: -100px;
+}
+.art09 .imgs .img2 {
+  position: absolute;
+  top: 50px;
+  right: -200px;
+  height: auto;
+  width: 550px;
+}
+.art09 .imgs .img3 {
+  position: absolute;
+  top: 420px;
+  left: -300px;
+  height: auto;
+  width: 400px;
+}
+
+.art10 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+.art10 .right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.art10 .right img {
+  width: 90px;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  align-self: flex-start;
+  margin-left: 200px;
+}
+.art10 .right .title {
+  font-family: "CodeNext";
+  width: 400px;
+  font-size: 45px;
+  line-height: 50px;
+  margin-left: 300px;
+}
+.art10 .right .text {
+  padding: 50px 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-left: 200px;
+}
+.art10 .imgs {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.art10 .imgs .img1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: -100px;
+}
+.art10 .imgs .img2 {
+  position: absolute;
+  top: 50px;
+  right: -200px;
+  height: auto;
+  width: 550px;
+}
+.art10 .imgs .img3 {
+  position: absolute;
+  top: 420px;
+  left: -300px;
+  height: auto;
+  width: 400px;
+}
+
+.art11 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+.art11 .numbTitle {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.art11 .numbTitle img {
+  width: 90px;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  align-self: flex-start;
+  margin-left: 200px;
+}
+.art11 .numbTitle .title {
+  font-family: "CodeNext";
+  width: 400px;
+  font-size: 45px;
+  line-height: 50px;
+  margin-left: 50px;
+}
+.art11 .imgs {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+.art11 .imgs .img1 {
+  position: absolute;
+  height: 100%;
+  width: 300%;
+  top: 400px;
+  right: -600px;
+}
+.art11 .imgs .img2 {
+  position: absolute;
+  top: 300px;
+  right: 100px;
+  height: auto;
+  width: 450px;
+}
+.art11 .text {
+  padding: 50px 0;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-right: 100px;
+}
+
+.art12 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+.art12 .numbTitle {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.art12 .numbTitle img {
+  width: 90px;
+  height: auto;
+  margin-top: 200px;
+  align-self: flex-start;
+  margin-left: 50px;
+}
+.art12 .numbTitle .title {
+  font-family: "CodeNext";
+  width: 400px;
+  font-size: 45px;
+  line-height: 50px;
+  margin-left: 50px;
+}
+.art12 .imgs {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+.art12 .imgs .img1 {
+  position: absolute;
+  height: 140%;
+  width: auto;
+  left: 100px;
+}
+.art12 .imgs .img2 {
+  position: absolute;
+  top: 300px;
+  right: 100px;
+  height: auto;
+  width: 700px;
+}
+.art12 .text {
+  padding: 50px;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+
+.art13 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+.art13 .numbTitle {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.art13 .numbTitle img {
+  width: 90px;
+  height: auto;
+  margin-top: 200px;
+  align-self: flex-start;
+  margin-left: 50px;
+}
+.art13 .numbTitle .title {
+  font-family: "CodeNext";
+  width: 400px;
+  font-size: 45px;
+  line-height: 50px;
+  margin-top: 200px;
+  margin-left: 150px;
+}
+.art13 .imgs {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+.art13 .imgs .img1 {
+  position: absolute;
+  height: 140%;
+  width: auto;
+  right: -30px;
+}
+.art13 .imgs .img2 {
+  position: absolute;
+  top: -150px;
+  right: 100px;
+  height: auto;
+  width: 700px;
+}
+.art13 .text {
+  padding: 0 70px;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
 }
 
 .outroMB {

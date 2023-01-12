@@ -26,7 +26,7 @@
 
     .imgs {
         width: 30%;
-        height: 100%; 
+        height: 100%;
         position: relative;
 
         .img1 {
@@ -85,66 +85,7 @@
 
     .imgs {
         width: 30%;
-        height: 100%; 
-        position: relative;
-
-        .img1 {
-            position: absolute;
-            height: 100%;
-            width: auto;
-        }
-
-        .img2 {
-            position: absolute;
-            top: 50px;
-            right: -350px;
-            height: auto;
-            width: 500px;
-        }
-    }
-
-    .text {
-        width: 40%;
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: 100px;
-        padding: 50px;
-    }
-}
-
-.art02 {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    display: flex;
-
-    .numbTitle {
-        width: 30%;
-        height: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-        padding: 40px;
-
-        img {
-            margin: 50px 50px;
-            width: 90px;
-            height: auto;
-            align-self: flex-end;
-        }
-
-        p {
-            font-family: 'CodeNext';
-            font-size: 45px;
-            line-height: 50px;
-        }
-    }
-
-    .imgs {
-        width: 30%;
-        height: 100%; 
         position: relative;
 
         .img1 {
@@ -202,7 +143,7 @@
 
     .imgs {
         width: 40%;
-        height: 100%; 
+        height: 100%;
         position: relative;
 
         .img1 {
@@ -213,7 +154,7 @@
 
         .img2 {
             position: absolute;
-            top: 50px; 
+            top: 50px;
             height: auto;
             width: 500px;
         }
@@ -262,7 +203,7 @@
 
     .imgs {
         width: 30%;
-        height: 100%; 
+        height: 100%;
         position: relative;
 
         .img1 {
@@ -276,7 +217,7 @@
 
         .img2 {
             position: absolute;
-            top: 50px; 
+            top: 50px;
             right: -400px;
             height: auto;
             width: 500px;
@@ -284,7 +225,7 @@
 
         .img3 {
             position: absolute;
-            bottom: 50px; 
+            bottom: 50px;
             left: -200px;
             height: auto;
             width: 500px;
@@ -309,7 +250,7 @@
 
 
     .left {
-        width: 50%;
+        width: 40%;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -328,11 +269,17 @@
             font-size: 45px;
             line-height: 50px;
             margin-left: 50px;
+            margin-top: 50px;
+        }
+
+        .text {
+            margin-top: 100px;
+            margin-left: 50px;
         }
     }
 
     .imgs {
-        width: 50%;
+        width: 60%;
         height: 100%;
         position: relative;
 
@@ -346,6 +293,526 @@
             position: absolute;
             height: auto;
             width: 500px;
+            left: 10px;
         }
+    }
+}
+
+.art06 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+
+
+    .right {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        position: relative;
+
+        img {
+            margin: 0px 50px 0px 0;
+            width: 90px;
+            height: 90px;
+            float: right;
+        }
+
+        .title {
+            font-family: 'CodeNext';
+            font-size: 45px;
+            line-height: 50px;
+            padding: 50px;
+        }
+
+        .text {
+            margin-top: 150px;
+        }
+    }
+
+    .imgs {
+        width: 60%;
+        height: 100%;
+        position: relative;
+
+        .img1 {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+
+        .img2 {
+            position: absolute;
+            height: auto;
+            width: 500px;
+            left: 150px;
+        }
+
+        .img3 {
+            position: absolute;
+            height: auto;
+            width: 500px;
+            top: 400px;
+        }
+    }
+}
+
+.art07 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+
+    .numbTitle {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        justify-content: flex-end;
+
+        img {
+            margin-bottom: 300px;
+            width: 90px;
+            height: auto;
+        }
+
+        p {
+            font-family: 'CodeNext';
+            width: 500px;
+            font-size: 45px;
+            line-height: 50px;
+        }
+    }
+
+    .imgs {
+        width: 40%;
+        height: 100%;
+        position: relative;
+
+        .img1 {
+            position: absolute;
+            height: 100%;
+            width: auto;
+            left: 150px;
+        }
+
+        .img2 {
+            position: absolute;
+            top: 50px;
+            left: -50px;
+            height: auto;
+            width: 400px;
+        }
+    }
+
+    .text {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 50px 0 0px;
+    }
+}
+
+.art08 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+
+    .numbTitle {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+
+        img {
+            width: 90px;
+            height: auto;
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+
+        p {
+            font-family: 'CodeNext';
+            width: 500px;
+            font-size: 45px;
+            line-height: 50px;
+        }
+    }
+
+    .imgs {
+        width: 40%;
+        height: 100%;
+        position: relative;
+
+        .img1 {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: -100px;
+        }
+
+        .img2 {
+            position: absolute;
+            top: 50px;
+            right: -200px;
+            height: auto;
+            width: 550px;
+        }
+
+        .img3 {
+            position: absolute;
+            top: 420px;
+            left: -300px;
+            height: auto;
+            width: 400px;
+        }
+    }
+
+    .text {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 525px 50px 0 0px;
+    }
+}
+
+.art09 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+
+    .left {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+
+        img {
+            width: 90px;
+            height: auto;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            align-self: flex-end;
+            margin-right: 100px;
+        }
+
+        .title {
+            font-family: 'CodeNext';
+            width: 500px;
+            font-size: 45px;
+            line-height: 50px;
+        }
+
+        .text {
+            padding: 50px 0;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .imgs {
+        width: 50%;
+        height: 100%;
+        position: relative;
+
+        .img1 {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: -100px;
+        }
+
+        .img2 {
+            position: absolute;
+            top: 50px;
+            right: -200px;
+            height: auto;
+            width: 550px;
+        }
+
+        .img3 {
+            position: absolute;
+            top: 420px;
+            left: -300px;
+            height: auto;
+            width: 400px;
+        }
+    }
+}
+
+.art10 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+
+    .right {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+
+        img {
+            width: 90px;
+            height: auto;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            align-self: flex-start;
+            margin-left: 200px;
+        }
+
+        .title {
+            font-family: 'CodeNext';
+            width: 400px;
+            font-size: 45px;
+            line-height: 50px;
+            margin-left: 300px;
+        }
+
+        .text {
+            padding: 50px 0;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 25px;
+            margin-left: 200px;
+        }
+    }
+
+    .imgs {
+        width: 50%;
+        height: 100%;
+        position: relative;
+
+        .img1 {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: -100px;
+        }
+
+        .img2 {
+            position: absolute;
+            top: 50px;
+            right: -200px;
+            height: auto;
+            width: 550px;
+        }
+
+        .img3 {
+            position: absolute;
+            top: 420px;
+            left: -300px;
+            height: auto;
+            width: 400px;
+        }
+    }
+}
+
+.art11 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+
+    .numbTitle {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+
+        img {
+            width: 90px;
+            height: auto;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            align-self: flex-start;
+            margin-left: 200px;
+        }
+
+        .title {
+            font-family: 'CodeNext';
+            width: 400px;
+            font-size: 45px;
+            line-height: 50px;
+            margin-left: 50px;
+        }
+    }
+
+    .imgs {
+        width: 40%;
+        height: 100%;
+        position: relative;
+
+        .img1 {
+            position: absolute;
+            height: 100%;
+            width: 300%;
+            top: 400px;
+            right: -600px;
+        }
+
+        .img2 {
+            position: absolute;
+            top: 300px;
+            right: 100px;
+            height: auto;
+            width: 450px;
+        }
+    }
+
+
+    .text {
+        padding: 50px 0;
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-right: 100px;
+    }
+}
+
+.art12 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+
+    .numbTitle {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+
+        img {
+            width: 90px;
+            height: auto;
+            margin-top: 200px;
+            align-self: flex-start;
+            margin-left: 50px;
+        }
+
+        .title {
+            font-family: 'CodeNext';
+            width: 400px;
+            font-size: 45px;
+            line-height: 50px;
+            margin-left: 50px;
+        }
+    }
+
+    .imgs {
+        width: 40%;
+        height: 100%;
+        position: relative;
+
+        .img1 {
+            position: absolute;
+            height: 140%;
+            width: auto;
+            left: 100px;
+        }
+
+        .img2 {
+            position: absolute;
+            top: 300px;
+            right: 100px;
+            height: auto;
+            width: 700px;
+        }
+    }
+
+
+    .text {
+        padding: 50px;
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-right: 50px;
+    }
+}
+
+.art13 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+
+    .numbTitle {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+
+        img {
+            width: 90px;
+            height: auto;
+            margin-top: 200px;
+            align-self: flex-start;
+            margin-left: 50px;
+        }
+
+        .title {
+            font-family: 'CodeNext';
+            width: 400px;
+            font-size: 45px;
+            line-height: 50px;
+            margin-top: 200px;
+            margin-left: 150px;
+        }
+    }
+
+    .imgs {
+        width: 40%;
+        height: 100%;
+        position: relative;
+
+        .img1 {
+            position: absolute;
+            height: 140%;
+            width: auto;
+            right: -30px;
+        }
+
+        .img2 {
+            position: absolute;
+            top: -150px;
+            right: 100px;
+            height: auto;
+            width: 700px;
+        }
+    }
+
+
+    .text {
+        padding: 0 70px;
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
     }
 }
