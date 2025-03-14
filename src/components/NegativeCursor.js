@@ -1,23 +1,20 @@
-import React, { useState } from 'react'
+import React, { useRef, useEffect } from "react";
 
 const NegativeCursor = () => {
-    const [cursorX, setCursorX] = useState()
-    const [cursorY, setCursorY] = useState()
+  const cursorRef = useRef(null);
 
-    window.addEventListener('mousedown', (e) => {
-        setCursorX(e.pageX)
-        setCursorY(e.pageY)
-    })
-    return (
-        <div className='negativeCursor'
-        style={{
-            left: cursorX + 'px',
-            top: cursorY + 'px'
-        }}
-        >
+  useEffect(() => {
+    const updateCursor = (e) => {
+      if (cursorRef.current) {
+        cursorRef.current.style.transform = `translate(${e.pageX}px, ${e.pageY}px)`;
+      }
+    };
 
-        </div>
-    )
-}
+    window.addEventListener("mousemove", updateCursor);
+    return () => window.removeEventListener("mousemove", updateCursor);
+  }, []);
 
-export default NegativeCursor
+  return <div ref={cursorRef} className="negativeCursor"></div>;
+};
+
+export default NegativeCursor;
