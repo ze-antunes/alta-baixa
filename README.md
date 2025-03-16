@@ -5,6 +5,8 @@
   <img src="./documents/Digital_Poster_white.gif" alt="Poster white" width="45%"/>
 </p>
 
+- Website - https://ze-antunes.github.io/alta-baixa/
+
 ## 📖 Project Overview
 
 **Alta & Baixa** is a typographic culture magazine developed as part of the **Editorial Laboratory** course in the Master's in Design and Multimedia at the University of Coimbra. This project aimed to create the **first issue** of the magazine, both in **print and web versions**.
