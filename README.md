@@ -56,11 +56,11 @@ The magazine follows a structured yet flexible editorial grid:
 ## 🎓 Academic Context
 - **Course:** Editorial Laboratory – Master's in Design and Multimedia
 - **Institution:** Faculty of Science and Technology, University of Coimbra - FCTUC
-- **Professor:** Artur Rebelo
+- **Professor:** [Artur Rebelo](https://www.instagram.com/artur.rebelo.r2/)
 - **Team:**
-  - Ana Inês França
-  - José Antunes
-  - Thomas Fresco
+  - [Ana Inês França](https://www.instagram.com/thelttl01/)
+  - [José Antunes](https://github.com/ze-antunes)
+  - [Thomas Fresco](https://www.instagram.com/thomaspfresco/)
 
 ## 📷 Project Images
 
