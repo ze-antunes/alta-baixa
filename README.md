@@ -58,7 +58,7 @@ The magazine follows a structured yet flexible editorial grid:
 - **Institution:** Faculty of Science and Technology, University of Coimbra - FCTUC
 - **Professor:** [Artur Rebelo](https://www.instagram.com/artur.rebelo.r2/)
 - **Team:**
-  - [Ana Inês França](https://www.instagram.com/thelttl01/)
+  - [Ana Inês](https://www.linkedin.com/in/aimfranca)
   - [José Antunes](https://github.com/ze-antunes)
   - [Thomas Fresco](https://www.instagram.com/thomaspfresco/)
 
