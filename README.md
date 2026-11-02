@@ -16,6 +16,7 @@ The magazine explores **typography in a broad cultural context**, reflecting on 
 ## ✨ Concept & Vision
 
 Alta & Baixa is designed to:
+
 - **Investigate and discuss typography** beyond the technical aspects, highlighting its cultural significance.
 - **Combine historical and contemporary content**, ensuring a dynamic and relevant perspective.
 - **Balance design and content**, emphasizing the importance of structure and readability.
@@ -26,34 +27,38 @@ Alta & Baixa is designed to:
 The magazine follows a structured yet flexible editorial grid:
 
 - **Cover**
-  - *Alta & Baixa – Revista de Cultura Tipográfica*
+  - _Alta & Baixa – Revista de Cultura Tipográfica_
   - Issue #1 / Coimbra, Portugal / Quarterly / Spring 2022
 - **Index**
 - **Editorial**
   - Introduction to the magazine’s mission and vision
 - **Feature Articles**
-  - *Thirteen Ways of Looking at a Typeface* – Michael Bierut
-  - *Absence in Design is Very Important* – Karel Martens
+  - _Thirteen Ways of Looking at a Typeface_ – Michael Bierut
+  - _Absence in Design is Very Important_ – Karel Martens
 - **Visual & Typographic Experiments**
   - Graphic and typographic explorations
 - **Colophon**
   - Production details and credits
 
 ## 🖋️ Print Edition
+
 - **Format:** Custom A4 (210mm x 250mm)
 - **Color Scheme:** Two-color printing (green and black)
 
 ## 🌐 Web Edition
+
 - **Landing Page:** Designed to reflect the structure of the print version
 - **Interactive Features:** Typography-focused animations and user interaction
 
 ## 🎨 Promotional Materials
+
 - **Poster:**
-  - *Alta & Baixa – Revista de Cultura Tipográfica* – Coimbra, 2021
+  - _Alta & Baixa – Revista de Cultura Tipográfica_ – Coimbra, 2021
   - Print version: 50 x 70 cm
   - Digital/Motion version: Adapted for social media (e.g., 1080 x 1350 for Facebook Ads)
 
 ## 🎓 Academic Context
+
 - **Course:** Editorial Laboratory – Master's in Design and Multimedia
 - **Institution:** Faculty of Science and Technology, University of Coimbra - FCTUC
 - **Professor:** [Artur Rebelo](https://www.instagram.com/artur.rebelo.r2/)
@@ -86,4 +91,4 @@ The magazine follows a structured yet flexible editorial grid:
 
 ---
 
-🖋 *Alta & Baixa is a creative exploration of typographic culture, bridging the past and future of design.*
+🖋 _Alta & Baixa is a creative exploration of typographic culture, bridging the past and future of design._
