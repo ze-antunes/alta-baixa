@@ -38,6 +38,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  -ms-scroll-snap-type: y mandatory;
   scroll-snap-type: y mandatory;
 }
 
@@ -48,8 +49,7 @@ body {
 ::-webkit-scrollbar-track {
   background: transparent;
   opacity: 0;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 }
 
 ::-webkit-scrollbar {
@@ -65,7 +65,9 @@ body {
 section {
   scroll-snap-align: start;
   scroll-snap-stop: always;
+  position: relative;
   height: 100vh;
+  height: 100svh;
   color: black;
   background: white;
 }
@@ -73,8 +75,7 @@ section {
 video {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .deck {
@@ -86,18 +87,30 @@ video {
   cursor: url("https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png") 39 39, auto;
 }
 
-.deck > div {
+.deck .deck-page {
   position: absolute;
-  width: 100vw;
-  height: 100vh;
-  will-change: transform;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Inconstant";
   background: rgba(255, 255, 255, 0.4);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+}
+
+.deck-underlay {
+  position: absolute;
+  inset: 0;
+  filter: blur(4px);
+  pointer-events: none;
+}
+
+.deck-page .card {
+  will-change: auto;
+}
+
+.deck-page:not(.is-active) {
+  pointer-events: none;
 }
 
 .card {
@@ -105,9 +118,7 @@ video {
   width: 500px;
   height: 500px;
   will-change: transform;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 .card__title {
   font-size: 3em;
@@ -143,14 +154,12 @@ video {
 
 .vertical {
   width: 200px;
-  height: -moz-fit-content;
   height: fit-content;
   position: absolute;
 }
 
 .horizontal {
   width: 300px;
-  height: -moz-fit-content;
   height: fit-content;
   position: absolute;
 }
@@ -212,29 +221,40 @@ video {
 
 .introTextVid {
   position: relative;
+  isolation: isolate;
 }
 
 .text-box {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   background: #000;
-  width: 100%;
-  height: 100%;
-  color: white;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "SuisseInt";
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  font-size: 16vw;
-  font-weight: 900;
-  letter-spacing: -100px;
-  line-height: 300px;
+  font-family: "SuisseInt", monospace;
+  user-select: none;
   mix-blend-mode: multiply;
-  text-align: start;
+  text-align: center;
+}
+
+.text-box h1 {
+  width: 100%;
+  height: 100%;
+}
+
+.text-box svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.text-box text {
+  fill: currentColor;
+  font-family: "SuisseInt", monospace;
+  font-size: 650px;
+  font-weight: 900;
 }
 
 .page {
@@ -320,13 +340,11 @@ video {
   position: absolute;
   top: 0;
   left: 0;
-  height: -moz-fit-content;
   height: fit-content;
   overflow-y: scroll;
   max-height: calc(100% - 70px);
   background: rgba(255, 255, 255, 0.6);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
   pointer-events: auto;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   transform: translateX(-101%);
@@ -370,7 +388,6 @@ video {
 
 .menu {
   width: 100%;
-  height: -moz-fit-content;
   height: fit-content;
   overflow: hidden;
   transition-duration: 1s;
@@ -558,9 +575,7 @@ video {
   overflow: hidden;
   position: relative;
   display: inline-block;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   color: #040504;
   cursor: default;
 }
@@ -1712,4 +1727,1038 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/* Keep the editorial collages, while allowing text to flow on smaller screens. */
+body {
+  overflow-x: clip;
+  overflow-y: auto;
+}
+
+.deck .deck-page > div {
+  position: relative;
+  touch-action: pan-y;
+}
+
+@media (max-width: 1100px), (max-height: 650px) {
+  section[id^=artigo1] {
+    height: auto;
+    min-height: 100svh;
+  }
+  .artMB, .introMB, .outroMB {
+    height: auto;
+    min-height: 100svh;
+    flex-wrap: wrap;
+  }
+  .artMB .text, .artMB .imgMB, .introMB .text1, .introMB .text2,
+  .introMB .imgs, .outroMB .img, .outroMB .text {
+    width: 50%;
+    height: auto;
+    padding: clamp(24px, 4vw, 48px);
+    min-width: 0;
+  }
+  .introMB .text2 {
+    width: 100%;
+  }
+  .artMB .imgMB img, .introMB .imgs img, .outroMB .img img {
+    width: 100%;
+    height: auto;
+    left: auto;
+  }
+  .outroMB .text {
+    font-size: clamp(32px, 5vw, 64px);
+    line-height: 1.1;
+  }
+  .art01 {
+    height: auto;
+    min-height: 100svh;
+    flex-wrap: wrap;
+    padding: 64px clamp(20px, 4vw, 48px) 32px;
+    gap: 24px;
+  }
+  .art01 > .numbTitle, .art01 > .left, .art01 > .right, .art01 > .bottom, .art01 > .text {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+  }
+  .art01 .numbTitle {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+  .art01 .numbTitle img, .art01 .left > img, .art01 .right > img, .art01 .bottom > img {
+    width: 60px;
+    height: auto;
+    margin: 0 0 16px;
+  }
+  .art01 .numbTitle p, .art01 .title {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(28px, 4vw, 45px);
+    line-height: 1.1;
+  }
+  .art01 .text, .art01 .text p {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .art01 .left .text, .art01 .right .text, .art01 .bottom .text {
+    margin-top: 24px;
+  }
+  .art01 .imgs {
+    width: 100%;
+    height: clamp(240px, 55vw, 500px);
+    position: relative;
+  }
+  .art01 .imgs .img1 {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: none;
+  }
+  .art01 .imgs .img2 {
+    top: 5%;
+    left: 5%;
+    right: auto;
+    bottom: auto;
+    width: 65%;
+    height: 85%;
+    object-fit: contain;
+  }
+  .art01 .imgs .img3 {
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    width: 55%;
+    height: 65%;
+    object-fit: contain;
+  }
+  .art02 {
+    height: auto;
+    min-height: 100svh;
+    flex-wrap: wrap;
+    padding: 64px clamp(20px, 4vw, 48px) 32px;
+    gap: 24px;
+  }
+  .art02 > .numbTitle, .art02 > .left, .art02 > .right, .art02 > .bottom, .art02 > .text {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+  }
+  .art02 .numbTitle {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+  .art02 .numbTitle img, .art02 .left > img, .art02 .right > img, .art02 .bottom > img {
+    width: 60px;
+    height: auto;
+    margin: 0 0 16px;
+  }
+  .art02 .numbTitle p, .art02 .title {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(28px, 4vw, 45px);
+    line-height: 1.1;
+  }
+  .art02 .text, .art02 .text p {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .art02 .left .text, .art02 .right .text, .art02 .bottom .text {
+    margin-top: 24px;
+  }
+  .art02 .imgs {
+    width: 100%;
+    height: clamp(240px, 55vw, 500px);
+    position: relative;
+  }
+  .art02 .imgs .img1 {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: none;
+  }
+  .art02 .imgs .img2 {
+    top: 5%;
+    left: 5%;
+    right: auto;
+    bottom: auto;
+    width: 65%;
+    height: 85%;
+    object-fit: contain;
+  }
+  .art02 .imgs .img3 {
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    width: 55%;
+    height: 65%;
+    object-fit: contain;
+  }
+  .art03 {
+    height: auto;
+    min-height: 100svh;
+    flex-wrap: wrap;
+    padding: 64px clamp(20px, 4vw, 48px) 32px;
+    gap: 24px;
+  }
+  .art03 > .numbTitle, .art03 > .left, .art03 > .right, .art03 > .bottom, .art03 > .text {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+  }
+  .art03 .numbTitle {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+  .art03 .numbTitle img, .art03 .left > img, .art03 .right > img, .art03 .bottom > img {
+    width: 60px;
+    height: auto;
+    margin: 0 0 16px;
+  }
+  .art03 .numbTitle p, .art03 .title {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(28px, 4vw, 45px);
+    line-height: 1.1;
+  }
+  .art03 .text, .art03 .text p {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .art03 .left .text, .art03 .right .text, .art03 .bottom .text {
+    margin-top: 24px;
+  }
+  .art03 .imgs {
+    width: 100%;
+    height: clamp(240px, 55vw, 500px);
+    position: relative;
+  }
+  .art03 .imgs .img1 {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: none;
+  }
+  .art03 .imgs .img2 {
+    top: 5%;
+    left: 5%;
+    right: auto;
+    bottom: auto;
+    width: 65%;
+    height: 85%;
+    object-fit: contain;
+  }
+  .art03 .imgs .img3 {
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    width: 55%;
+    height: 65%;
+    object-fit: contain;
+  }
+  .art04 {
+    height: auto;
+    min-height: 100svh;
+    flex-wrap: wrap;
+    padding: 64px clamp(20px, 4vw, 48px) 32px;
+    gap: 24px;
+  }
+  .art04 > .numbTitle, .art04 > .left, .art04 > .right, .art04 > .bottom, .art04 > .text {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+  }
+  .art04 .numbTitle {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+  .art04 .numbTitle img, .art04 .left > img, .art04 .right > img, .art04 .bottom > img {
+    width: 60px;
+    height: auto;
+    margin: 0 0 16px;
+  }
+  .art04 .numbTitle p, .art04 .title {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(28px, 4vw, 45px);
+    line-height: 1.1;
+  }
+  .art04 .text, .art04 .text p {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .art04 .left .text, .art04 .right .text, .art04 .bottom .text {
+    margin-top: 24px;
+  }
+  .art04 .imgs {
+    width: 100%;
+    height: clamp(240px, 55vw, 500px);
+    position: relative;
+  }
+  .art04 .imgs .img1 {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: none;
+  }
+  .art04 .imgs .img2 {
+    top: 5%;
+    left: 5%;
+    right: auto;
+    bottom: auto;
+    width: 65%;
+    height: 85%;
+    object-fit: contain;
+  }
+  .art04 .imgs .img3 {
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    width: 55%;
+    height: 65%;
+    object-fit: contain;
+  }
+  .art05 {
+    height: auto;
+    min-height: 100svh;
+    flex-wrap: wrap;
+    padding: 64px clamp(20px, 4vw, 48px) 32px;
+    gap: 24px;
+  }
+  .art05 > .numbTitle, .art05 > .left, .art05 > .right, .art05 > .bottom, .art05 > .text {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+  }
+  .art05 .numbTitle {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+  .art05 .numbTitle img, .art05 .left > img, .art05 .right > img, .art05 .bottom > img {
+    width: 60px;
+    height: auto;
+    margin: 0 0 16px;
+  }
+  .art05 .numbTitle p, .art05 .title {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(28px, 4vw, 45px);
+    line-height: 1.1;
+  }
+  .art05 .text, .art05 .text p {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .art05 .left .text, .art05 .right .text, .art05 .bottom .text {
+    margin-top: 24px;
+  }
+  .art05 .imgs {
+    width: 100%;
+    height: clamp(240px, 55vw, 500px);
+    position: relative;
+  }
+  .art05 .imgs .img1 {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: none;
+  }
+  .art05 .imgs .img2 {
+    top: 5%;
+    left: 5%;
+    right: auto;
+    bottom: auto;
+    width: 65%;
+    height: 85%;
+    object-fit: contain;
+  }
+  .art05 .imgs .img3 {
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    width: 55%;
+    height: 65%;
+    object-fit: contain;
+  }
+  .art06 {
+    height: auto;
+    min-height: 100svh;
+    flex-wrap: wrap;
+    padding: 64px clamp(20px, 4vw, 48px) 32px;
+    gap: 24px;
+  }
+  .art06 > .numbTitle, .art06 > .left, .art06 > .right, .art06 > .bottom, .art06 > .text {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+  }
+  .art06 .numbTitle {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+  .art06 .numbTitle img, .art06 .left > img, .art06 .right > img, .art06 .bottom > img {
+    width: 60px;
+    height: auto;
+    margin: 0 0 16px;
+  }
+  .art06 .numbTitle p, .art06 .title {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(28px, 4vw, 45px);
+    line-height: 1.1;
+  }
+  .art06 .text, .art06 .text p {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .art06 .left .text, .art06 .right .text, .art06 .bottom .text {
+    margin-top: 24px;
+  }
+  .art06 .imgs {
+    width: 100%;
+    height: clamp(240px, 55vw, 500px);
+    position: relative;
+  }
+  .art06 .imgs .img1 {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: none;
+  }
+  .art06 .imgs .img2 {
+    top: 5%;
+    left: 5%;
+    right: auto;
+    bottom: auto;
+    width: 65%;
+    height: 85%;
+    object-fit: contain;
+  }
+  .art06 .imgs .img3 {
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    width: 55%;
+    height: 65%;
+    object-fit: contain;
+  }
+  .art07 {
+    height: auto;
+    min-height: 100svh;
+    flex-wrap: wrap;
+    padding: 64px clamp(20px, 4vw, 48px) 32px;
+    gap: 24px;
+  }
+  .art07 > .numbTitle, .art07 > .left, .art07 > .right, .art07 > .bottom, .art07 > .text {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+  }
+  .art07 .numbTitle {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+  .art07 .numbTitle img, .art07 .left > img, .art07 .right > img, .art07 .bottom > img {
+    width: 60px;
+    height: auto;
+    margin: 0 0 16px;
+  }
+  .art07 .numbTitle p, .art07 .title {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(28px, 4vw, 45px);
+    line-height: 1.1;
+  }
+  .art07 .text, .art07 .text p {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .art07 .left .text, .art07 .right .text, .art07 .bottom .text {
+    margin-top: 24px;
+  }
+  .art07 .imgs {
+    width: 100%;
+    height: clamp(240px, 55vw, 500px);
+    position: relative;
+  }
+  .art07 .imgs .img1 {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: none;
+  }
+  .art07 .imgs .img2 {
+    top: 5%;
+    left: 5%;
+    right: auto;
+    bottom: auto;
+    width: 65%;
+    height: 85%;
+    object-fit: contain;
+  }
+  .art07 .imgs .img3 {
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    width: 55%;
+    height: 65%;
+    object-fit: contain;
+  }
+  .art08 {
+    height: auto;
+    min-height: 100svh;
+    flex-wrap: wrap;
+    padding: 64px clamp(20px, 4vw, 48px) 32px;
+    gap: 24px;
+  }
+  .art08 > .numbTitle, .art08 > .left, .art08 > .right, .art08 > .bottom, .art08 > .text {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+  }
+  .art08 .numbTitle {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+  .art08 .numbTitle img, .art08 .left > img, .art08 .right > img, .art08 .bottom > img {
+    width: 60px;
+    height: auto;
+    margin: 0 0 16px;
+  }
+  .art08 .numbTitle p, .art08 .title {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(28px, 4vw, 45px);
+    line-height: 1.1;
+  }
+  .art08 .text, .art08 .text p {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .art08 .left .text, .art08 .right .text, .art08 .bottom .text {
+    margin-top: 24px;
+  }
+  .art08 .imgs {
+    width: 100%;
+    height: clamp(240px, 55vw, 500px);
+    position: relative;
+  }
+  .art08 .imgs .img1 {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: none;
+  }
+  .art08 .imgs .img2 {
+    top: 5%;
+    left: 5%;
+    right: auto;
+    bottom: auto;
+    width: 65%;
+    height: 85%;
+    object-fit: contain;
+  }
+  .art08 .imgs .img3 {
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    width: 55%;
+    height: 65%;
+    object-fit: contain;
+  }
+  .art09 {
+    height: auto;
+    min-height: 100svh;
+    flex-wrap: wrap;
+    padding: 64px clamp(20px, 4vw, 48px) 32px;
+    gap: 24px;
+  }
+  .art09 > .numbTitle, .art09 > .left, .art09 > .right, .art09 > .bottom, .art09 > .text {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+  }
+  .art09 .numbTitle {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+  .art09 .numbTitle img, .art09 .left > img, .art09 .right > img, .art09 .bottom > img {
+    width: 60px;
+    height: auto;
+    margin: 0 0 16px;
+  }
+  .art09 .numbTitle p, .art09 .title {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(28px, 4vw, 45px);
+    line-height: 1.1;
+  }
+  .art09 .text, .art09 .text p {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .art09 .left .text, .art09 .right .text, .art09 .bottom .text {
+    margin-top: 24px;
+  }
+  .art09 .imgs {
+    width: 100%;
+    height: clamp(240px, 55vw, 500px);
+    position: relative;
+  }
+  .art09 .imgs .img1 {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: none;
+  }
+  .art09 .imgs .img2 {
+    top: 5%;
+    left: 5%;
+    right: auto;
+    bottom: auto;
+    width: 65%;
+    height: 85%;
+    object-fit: contain;
+  }
+  .art09 .imgs .img3 {
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    width: 55%;
+    height: 65%;
+    object-fit: contain;
+  }
+  .art10 {
+    height: auto;
+    min-height: 100svh;
+    flex-wrap: wrap;
+    padding: 64px clamp(20px, 4vw, 48px) 32px;
+    gap: 24px;
+  }
+  .art10 > .numbTitle, .art10 > .left, .art10 > .right, .art10 > .bottom, .art10 > .text {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+  }
+  .art10 .numbTitle {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+  .art10 .numbTitle img, .art10 .left > img, .art10 .right > img, .art10 .bottom > img {
+    width: 60px;
+    height: auto;
+    margin: 0 0 16px;
+  }
+  .art10 .numbTitle p, .art10 .title {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(28px, 4vw, 45px);
+    line-height: 1.1;
+  }
+  .art10 .text, .art10 .text p {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .art10 .left .text, .art10 .right .text, .art10 .bottom .text {
+    margin-top: 24px;
+  }
+  .art10 .imgs {
+    width: 100%;
+    height: clamp(240px, 55vw, 500px);
+    position: relative;
+  }
+  .art10 .imgs .img1 {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: none;
+  }
+  .art10 .imgs .img2 {
+    top: 5%;
+    left: 5%;
+    right: auto;
+    bottom: auto;
+    width: 65%;
+    height: 85%;
+    object-fit: contain;
+  }
+  .art10 .imgs .img3 {
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    width: 55%;
+    height: 65%;
+    object-fit: contain;
+  }
+  .art11 {
+    height: auto;
+    min-height: 100svh;
+    flex-wrap: wrap;
+    padding: 64px clamp(20px, 4vw, 48px) 32px;
+    gap: 24px;
+  }
+  .art11 > .numbTitle, .art11 > .left, .art11 > .right, .art11 > .bottom, .art11 > .text {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+  }
+  .art11 .numbTitle {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+  .art11 .numbTitle img, .art11 .left > img, .art11 .right > img, .art11 .bottom > img {
+    width: 60px;
+    height: auto;
+    margin: 0 0 16px;
+  }
+  .art11 .numbTitle p, .art11 .title {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(28px, 4vw, 45px);
+    line-height: 1.1;
+  }
+  .art11 .text, .art11 .text p {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .art11 .left .text, .art11 .right .text, .art11 .bottom .text {
+    margin-top: 24px;
+  }
+  .art11 .imgs {
+    width: 100%;
+    height: clamp(240px, 55vw, 500px);
+    position: relative;
+  }
+  .art11 .imgs .img1 {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: none;
+  }
+  .art11 .imgs .img2 {
+    top: 5%;
+    left: 5%;
+    right: auto;
+    bottom: auto;
+    width: 65%;
+    height: 85%;
+    object-fit: contain;
+  }
+  .art11 .imgs .img3 {
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    width: 55%;
+    height: 65%;
+    object-fit: contain;
+  }
+  .art12 {
+    height: auto;
+    min-height: 100svh;
+    flex-wrap: wrap;
+    padding: 64px clamp(20px, 4vw, 48px) 32px;
+    gap: 24px;
+  }
+  .art12 > .numbTitle, .art12 > .left, .art12 > .right, .art12 > .bottom, .art12 > .text {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+  }
+  .art12 .numbTitle {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+  .art12 .numbTitle img, .art12 .left > img, .art12 .right > img, .art12 .bottom > img {
+    width: 60px;
+    height: auto;
+    margin: 0 0 16px;
+  }
+  .art12 .numbTitle p, .art12 .title {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(28px, 4vw, 45px);
+    line-height: 1.1;
+  }
+  .art12 .text, .art12 .text p {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .art12 .left .text, .art12 .right .text, .art12 .bottom .text {
+    margin-top: 24px;
+  }
+  .art12 .imgs {
+    width: 100%;
+    height: clamp(240px, 55vw, 500px);
+    position: relative;
+  }
+  .art12 .imgs .img1 {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: none;
+  }
+  .art12 .imgs .img2 {
+    top: 5%;
+    left: 5%;
+    right: auto;
+    bottom: auto;
+    width: 65%;
+    height: 85%;
+    object-fit: contain;
+  }
+  .art12 .imgs .img3 {
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    width: 55%;
+    height: 65%;
+    object-fit: contain;
+  }
+  .art13 {
+    height: auto;
+    min-height: 100svh;
+    flex-wrap: wrap;
+    padding: 64px clamp(20px, 4vw, 48px) 32px;
+    gap: 24px;
+  }
+  .art13 > .numbTitle, .art13 > .left, .art13 > .right, .art13 > .bottom, .art13 > .text {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+  }
+  .art13 .numbTitle {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+  .art13 .numbTitle img, .art13 .left > img, .art13 .right > img, .art13 .bottom > img {
+    width: 60px;
+    height: auto;
+    margin: 0 0 16px;
+  }
+  .art13 .numbTitle p, .art13 .title {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(28px, 4vw, 45px);
+    line-height: 1.1;
+  }
+  .art13 .text, .art13 .text p {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .art13 .left .text, .art13 .right .text, .art13 .bottom .text {
+    margin-top: 24px;
+  }
+  .art13 .imgs {
+    width: 100%;
+    height: clamp(240px, 55vw, 500px);
+    position: relative;
+  }
+  .art13 .imgs .img1 {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: none;
+  }
+  .art13 .imgs .img2 {
+    top: 5%;
+    left: 5%;
+    right: auto;
+    bottom: auto;
+    width: 65%;
+    height: 85%;
+    object-fit: contain;
+  }
+  .art13 .imgs .img3 {
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    width: 55%;
+    height: 65%;
+    object-fit: contain;
+  }
+}
+@media (max-width: 600px) {
+  .artMB .text, .artMB .imgMB, .introMB .text1, .introMB .text2,
+  .introMB .imgs, .outroMB .img, .outroMB .text {
+    width: 100%;
+  }
+  .artMB .text {
+    padding-top: 80px;
+  }
+  .artMB .title {
+    font-size: 38px;
+    line-height: 1.1;
+  }
+}
+@media (max-width: 1100px), (max-height: 650px) {
+  #artigo2 {
+    height: auto;
+    min-height: 100svh;
+  }
+  .deck {
+    position: relative;
+    min-height: max(100svh, 1050px);
+  }
+  .deck .deck-page {
+    align-items: flex-start;
+    padding-top: 64px;
+  }
+  .card {
+    width: min(500px, 86vw);
+    height: auto;
+    min-height: 500px;
+  }
+  .card__title {
+    font-size: clamp(26px, 6vw, 48px);
+  }
+  .card__text--intro {
+    font-size: clamp(20px, 4vw, 32px);
+  }
+  .card .v1, .card .v2, .card .v5 {
+    max-width: 100%;
+    margin-left: 0;
+    float: none;
+  }
+  .card .v3, .card .v6 {
+    margin-top: 48px;
+  }
+  .card .vertical, .card .horizontal {
+    position: relative;
+    inset: auto;
+    display: inline-block;
+    width: 45%;
+    margin: 16px 2%;
+    vertical-align: top;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

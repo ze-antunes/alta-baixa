@@ -1,0 +1,62 @@
+/* Keep the editorial collages, while allowing text to flow on smaller screens. */
+body { overflow-x: clip; overflow-y: auto; }
+.deck .deck-page > div { position: relative; touch-action: pan-y; }
+@media (max-width: 1100px), (max-height: 650px) {
+    section[id^="artigo1"] { height: auto; min-height: 100svh; }
+    .artMB, .introMB, .outroMB { height: auto; min-height: 100svh; flex-wrap: wrap; }
+    .artMB .text, .artMB .imgMB, .introMB .text1, .introMB .text2,
+    .introMB .imgs, .outroMB .img, .outroMB .text {
+        width: 50%; height: auto; padding: clamp(24px, 4vw, 48px); min-width: 0;
+    }
+    .introMB .text2 { width: 100%; }
+    .artMB .imgMB img, .introMB .imgs img, .outroMB .img img {
+        width: 100%; height: auto; left: auto;
+    }
+    .outroMB .text { font-size: clamp(32px, 5vw, 64px); line-height: 1.1; }
+    @for $i from 1 through 13 {
+        $num: if($i < 10, '0#{$i}', '#{$i}');
+        .art#{$num} {
+            height: auto; min-height: 100svh; flex-wrap: wrap;
+            padding: 64px clamp(20px, 4vw, 48px) 32px; gap: 24px;
+            > .numbTitle, > .left, > .right, > .bottom, > .text {
+                width: 100%; height: auto; margin: 0; padding: 0; min-width: 0;
+            }
+            .numbTitle { flex-direction: row; align-items: center; gap: 24px; }
+            .numbTitle img, .left > img, .right > img, .bottom > img {
+                width: 60px; height: auto; margin: 0 0 16px;
+            }
+            .numbTitle p, .title {
+                width: auto; margin: 0; padding: 0;
+                font-size: clamp(28px, 4vw, 45px); line-height: 1.1;
+            }
+            .text, .text p { width: 100%; height: auto; margin: 0; padding: 0; font-size: 14px; line-height: 1.6; }
+            .left .text, .right .text, .bottom .text { margin-top: 24px; }
+            .imgs {
+                width: 100%; height: clamp(240px, 55vw, 500px); position: relative;
+                .img1 { inset: 0; width: 100%; height: 100%; object-fit: cover; transform: none; }
+                .img2 { top: 5%; left: 5%; right: auto; bottom: auto; width: 65%; height: 85%; object-fit: contain; }
+                .img3 { top: auto; left: auto; right: 0; bottom: 0; width: 55%; height: 65%; object-fit: contain; }
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    .artMB .text, .artMB .imgMB, .introMB .text1, .introMB .text2,
+    .introMB .imgs, .outroMB .img, .outroMB .text { width: 100%; }
+    .artMB .text { padding-top: 80px; }
+    .artMB .title { font-size: 38px; line-height: 1.1; }
+}
+@media (max-width: 1100px), (max-height: 650px) {
+    #artigo2 { height: auto; min-height: 100svh; }
+    .deck { position: relative; min-height: max(100svh, 1050px); }
+    .deck .deck-page { align-items: flex-start; padding-top: 64px; }
+    .card { width: min(500px, 86vw); height: auto; min-height: 500px; }
+    .card__title { font-size: clamp(26px, 6vw, 48px); }
+    .card__text--intro { font-size: clamp(20px, 4vw, 32px); }
+    .card .v1, .card .v2, .card .v5 { max-width: 100%; margin-left: 0; float: none; }
+    .card .v3, .card .v6 { margin-top: 48px; }
+    .card .vertical, .card .horizontal {
+        position: relative; inset: auto; display: inline-block;
+        width: 45%; margin: 16px 2%; vertical-align: top;
+    }
+}

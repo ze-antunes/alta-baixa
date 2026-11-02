@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useSprings } from "react-spring/hooks";
+import React, { useState, useRef, useEffect } from "react";
+import { useSprings } from "react-spring";
 import { useGesture } from "react-with-gesture";
 import Card from "./Card";
 
@@ -293,23 +293,20 @@ const objs = [
 ];
 
 const to = i => ({
-  x: 0,
-  y: 0,
-  scale: 1,
-  rot: -10 + Math.random() * 20,
-  delay: i * 100
+  x: 0, y: 0, scale: 1, rot: -10 + Math.random() * 20, delay: i * 100
 });
-const from = i => ({ rot: 0, scale: 0, y: 0 });
-
-const trans = (r, s) =>
-  `perspective(1500px) scale(${s})`;
+const from = () => ({ x: 0, y: 0, scale: 0, rot: 0 });
+const trans = (r, s) => `scale(${s})`;
 
 function Deck() {
   const [gone] = useState(() => new Set());
+  const [top, setTop] = useState(cards.length - 1);
+  const resetTimer = useRef(null);
+  useEffect(() => () => clearTimeout(resetTimer.current), []);
 
   const [props, set] = useSprings(cards.length, i => ({
     ...to(i),
-    from: from(i)
+    from: from()
   }));
 
   const bind = useGesture(
@@ -317,15 +314,18 @@ function Deck() {
       args: [index],
       down,
       delta: [xDelta],
-      distance,
       direction: [xDir],
       velocity
     }) => {
-      const trigger = velocity > 0.2;
+      if (index !== cards.length - 1 - gone.size || gone.has(index)) return;
+      const trigger = velocity > 0.2 || Math.abs(xDelta) > Math.min(120, window.innerWidth * 0.25);
 
       const dir = xDir < 0 ? -1 : 1;
 
-      if (!down && trigger) gone.add(index);
+      if (!down && trigger) {
+        gone.add(index);
+        setTop(index - 1);
+      }
 
       set(i => {
         if (index !== i) return;
@@ -335,7 +335,7 @@ function Deck() {
 
         const rot = xDelta / 100 + (isGone ? dir * 10 * velocity : 0);
 
-        const scale = down ? 1.1 : 1;
+        const scale = down ? 1.02 : 1;
         return {
           x,
           rot,
@@ -346,24 +346,42 @@ function Deck() {
       });
 
       if (!down && gone.size === cards.length)
-        setTimeout(() => gone.clear() || set(i => to(i)), 600);
+        resetTimer.current = setTimeout(() => {
+          gone.clear();
+          set(i => to(i));
+          setTop(cards.length - 1);
+        }, 600);
     }
   );
 
-  return props.map(({ x, y, rot, scale }, i) => (
-    <Card
-      key={i}
-      i={i}
-      x={x}
-      y={y}
-      rot={rot}
-      scale={scale}
-      trans={trans}
-      cards={cards}
-      objs={objs}
-      bind={bind}
-    />
-  ));
+  const renderCard = (i, moving) => {
+    const { x, y, rot, scale } = props[i];
+    return (
+      <Card
+        key={i}
+        i={i}
+        active={i === top}
+        moving={moving}
+        x={x}
+        y={y}
+        rot={rot}
+        scale={scale}
+        trans={trans}
+        objs={objs}
+        bind={bind}
+      />
+    );
+  };
+
+  return (
+    <React.Fragment>
+      <div className="deck-underlay" aria-hidden="true">
+        {cards.map((_, i) => i < top ? renderCard(i, true) : null)}
+      </div>
+      {top >= 0 && renderCard(top, true)}
+      {top + 1 < cards.length && renderCard(top + 1, true)}
+    </React.Fragment>
+  );
 }
 
 export default Deck;

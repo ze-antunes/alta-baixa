@@ -26,9 +26,14 @@ class App extends Component {
       <div className="App">
         <SideMenu />
         <section className="introTextVid">
-          <video src={video} autoPlay loop muted />
+          <video src={video} autoPlay loop muted playsInline />
           <div className="text-box">
-            <h1>A L T A <br /> B A I X A</h1>
+            <h1 aria-label="Alta Baixa">
+              <svg viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true">
+                <text x="10" y="475" textLength="980" lengthAdjust="spacingAndGlyphs">ALTA</text>
+                <text x="10" y="975" textLength="980" lengthAdjust="spacingAndGlyphs">BAIXA</text>
+              </svg>
+            </h1>
           </div>
         </section>
         <section id="artigo1">
@@ -80,7 +85,7 @@ class App extends Component {
           <OutroMB />
         </section>
         <section>
-          <video src={video2} autoPlay loop muted />
+          <video src={video2} autoPlay loop muted playsInline />
         </section>
         <section id="artigo2">
           <div className="deck">
