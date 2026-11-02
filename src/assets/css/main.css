@@ -1811,6 +1811,31 @@ body {
   .art01 .left .text, .art01 .right .text, .art01 .bottom .text {
     margin-top: 24px;
   }
+  .art01 .numbTitle p, .art01 .numbTitle .title,
+  .art01 .left .title, .art01 .right .title, .art01 .bottom .title {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(28px, 4vw, 45px);
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+  }
+  .art01 .numbTitle p a, .art01 .numbTitle .title a,
+  .art01 .left .title a, .art01 .right .title a, .art01 .bottom .title a {
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+  .art01 .left .text, .art01 .right .text, .art01 .bottom .text {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 24px 0 0;
+    padding: 0;
+    overflow-wrap: anywhere;
+  }
   .art01 .imgs {
     width: 100%;
     height: clamp(240px, 55vw, 500px);
@@ -1882,6 +1907,31 @@ body {
   }
   .art02 .left .text, .art02 .right .text, .art02 .bottom .text {
     margin-top: 24px;
+  }
+  .art02 .numbTitle p, .art02 .numbTitle .title,
+  .art02 .left .title, .art02 .right .title, .art02 .bottom .title {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(28px, 4vw, 45px);
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+  }
+  .art02 .numbTitle p a, .art02 .numbTitle .title a,
+  .art02 .left .title a, .art02 .right .title a, .art02 .bottom .title a {
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+  .art02 .left .text, .art02 .right .text, .art02 .bottom .text {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 24px 0 0;
+    padding: 0;
+    overflow-wrap: anywhere;
   }
   .art02 .imgs {
     width: 100%;
@@ -1955,6 +2005,31 @@ body {
   .art03 .left .text, .art03 .right .text, .art03 .bottom .text {
     margin-top: 24px;
   }
+  .art03 .numbTitle p, .art03 .numbTitle .title,
+  .art03 .left .title, .art03 .right .title, .art03 .bottom .title {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(28px, 4vw, 45px);
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+  }
+  .art03 .numbTitle p a, .art03 .numbTitle .title a,
+  .art03 .left .title a, .art03 .right .title a, .art03 .bottom .title a {
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+  .art03 .left .text, .art03 .right .text, .art03 .bottom .text {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 24px 0 0;
+    padding: 0;
+    overflow-wrap: anywhere;
+  }
   .art03 .imgs {
     width: 100%;
     height: clamp(240px, 55vw, 500px);
@@ -2026,6 +2101,31 @@ body {
   }
   .art04 .left .text, .art04 .right .text, .art04 .bottom .text {
     margin-top: 24px;
+  }
+  .art04 .numbTitle p, .art04 .numbTitle .title,
+  .art04 .left .title, .art04 .right .title, .art04 .bottom .title {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(28px, 4vw, 45px);
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+  }
+  .art04 .numbTitle p a, .art04 .numbTitle .title a,
+  .art04 .left .title a, .art04 .right .title a, .art04 .bottom .title a {
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+  .art04 .left .text, .art04 .right .text, .art04 .bottom .text {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 24px 0 0;
+    padding: 0;
+    overflow-wrap: anywhere;
   }
   .art04 .imgs {
     width: 100%;
@@ -2099,6 +2199,31 @@ body {
   .art05 .left .text, .art05 .right .text, .art05 .bottom .text {
     margin-top: 24px;
   }
+  .art05 .numbTitle p, .art05 .numbTitle .title,
+  .art05 .left .title, .art05 .right .title, .art05 .bottom .title {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(28px, 4vw, 45px);
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+  }
+  .art05 .numbTitle p a, .art05 .numbTitle .title a,
+  .art05 .left .title a, .art05 .right .title a, .art05 .bottom .title a {
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+  .art05 .left .text, .art05 .right .text, .art05 .bottom .text {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 24px 0 0;
+    padding: 0;
+    overflow-wrap: anywhere;
+  }
   .art05 .imgs {
     width: 100%;
     height: clamp(240px, 55vw, 500px);
@@ -2170,6 +2295,31 @@ body {
   }
   .art06 .left .text, .art06 .right .text, .art06 .bottom .text {
     margin-top: 24px;
+  }
+  .art06 .numbTitle p, .art06 .numbTitle .title,
+  .art06 .left .title, .art06 .right .title, .art06 .bottom .title {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(28px, 4vw, 45px);
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+  }
+  .art06 .numbTitle p a, .art06 .numbTitle .title a,
+  .art06 .left .title a, .art06 .right .title a, .art06 .bottom .title a {
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+  .art06 .left .text, .art06 .right .text, .art06 .bottom .text {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 24px 0 0;
+    padding: 0;
+    overflow-wrap: anywhere;
   }
   .art06 .imgs {
     width: 100%;
@@ -2243,6 +2393,31 @@ body {
   .art07 .left .text, .art07 .right .text, .art07 .bottom .text {
     margin-top: 24px;
   }
+  .art07 .numbTitle p, .art07 .numbTitle .title,
+  .art07 .left .title, .art07 .right .title, .art07 .bottom .title {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(28px, 4vw, 45px);
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+  }
+  .art07 .numbTitle p a, .art07 .numbTitle .title a,
+  .art07 .left .title a, .art07 .right .title a, .art07 .bottom .title a {
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+  .art07 .left .text, .art07 .right .text, .art07 .bottom .text {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 24px 0 0;
+    padding: 0;
+    overflow-wrap: anywhere;
+  }
   .art07 .imgs {
     width: 100%;
     height: clamp(240px, 55vw, 500px);
@@ -2314,6 +2489,31 @@ body {
   }
   .art08 .left .text, .art08 .right .text, .art08 .bottom .text {
     margin-top: 24px;
+  }
+  .art08 .numbTitle p, .art08 .numbTitle .title,
+  .art08 .left .title, .art08 .right .title, .art08 .bottom .title {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(28px, 4vw, 45px);
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+  }
+  .art08 .numbTitle p a, .art08 .numbTitle .title a,
+  .art08 .left .title a, .art08 .right .title a, .art08 .bottom .title a {
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+  .art08 .left .text, .art08 .right .text, .art08 .bottom .text {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 24px 0 0;
+    padding: 0;
+    overflow-wrap: anywhere;
   }
   .art08 .imgs {
     width: 100%;
@@ -2387,6 +2587,31 @@ body {
   .art09 .left .text, .art09 .right .text, .art09 .bottom .text {
     margin-top: 24px;
   }
+  .art09 .numbTitle p, .art09 .numbTitle .title,
+  .art09 .left .title, .art09 .right .title, .art09 .bottom .title {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(28px, 4vw, 45px);
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+  }
+  .art09 .numbTitle p a, .art09 .numbTitle .title a,
+  .art09 .left .title a, .art09 .right .title a, .art09 .bottom .title a {
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+  .art09 .left .text, .art09 .right .text, .art09 .bottom .text {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 24px 0 0;
+    padding: 0;
+    overflow-wrap: anywhere;
+  }
   .art09 .imgs {
     width: 100%;
     height: clamp(240px, 55vw, 500px);
@@ -2458,6 +2683,31 @@ body {
   }
   .art10 .left .text, .art10 .right .text, .art10 .bottom .text {
     margin-top: 24px;
+  }
+  .art10 .numbTitle p, .art10 .numbTitle .title,
+  .art10 .left .title, .art10 .right .title, .art10 .bottom .title {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(28px, 4vw, 45px);
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+  }
+  .art10 .numbTitle p a, .art10 .numbTitle .title a,
+  .art10 .left .title a, .art10 .right .title a, .art10 .bottom .title a {
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+  .art10 .left .text, .art10 .right .text, .art10 .bottom .text {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 24px 0 0;
+    padding: 0;
+    overflow-wrap: anywhere;
   }
   .art10 .imgs {
     width: 100%;
@@ -2531,6 +2781,31 @@ body {
   .art11 .left .text, .art11 .right .text, .art11 .bottom .text {
     margin-top: 24px;
   }
+  .art11 .numbTitle p, .art11 .numbTitle .title,
+  .art11 .left .title, .art11 .right .title, .art11 .bottom .title {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(28px, 4vw, 45px);
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+  }
+  .art11 .numbTitle p a, .art11 .numbTitle .title a,
+  .art11 .left .title a, .art11 .right .title a, .art11 .bottom .title a {
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+  .art11 .left .text, .art11 .right .text, .art11 .bottom .text {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 24px 0 0;
+    padding: 0;
+    overflow-wrap: anywhere;
+  }
   .art11 .imgs {
     width: 100%;
     height: clamp(240px, 55vw, 500px);
@@ -2603,6 +2878,31 @@ body {
   .art12 .left .text, .art12 .right .text, .art12 .bottom .text {
     margin-top: 24px;
   }
+  .art12 .numbTitle p, .art12 .numbTitle .title,
+  .art12 .left .title, .art12 .right .title, .art12 .bottom .title {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(28px, 4vw, 45px);
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+  }
+  .art12 .numbTitle p a, .art12 .numbTitle .title a,
+  .art12 .left .title a, .art12 .right .title a, .art12 .bottom .title a {
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+  .art12 .left .text, .art12 .right .text, .art12 .bottom .text {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 24px 0 0;
+    padding: 0;
+    overflow-wrap: anywhere;
+  }
   .art12 .imgs {
     width: 100%;
     height: clamp(240px, 55vw, 500px);
@@ -2674,6 +2974,31 @@ body {
   }
   .art13 .left .text, .art13 .right .text, .art13 .bottom .text {
     margin-top: 24px;
+  }
+  .art13 .numbTitle p, .art13 .numbTitle .title,
+  .art13 .left .title, .art13 .right .title, .art13 .bottom .title {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(28px, 4vw, 45px);
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+  }
+  .art13 .numbTitle p a, .art13 .numbTitle .title a,
+  .art13 .left .title a, .art13 .right .title a, .art13 .bottom .title a {
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+  .art13 .left .text, .art13 .right .text, .art13 .bottom .text {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 24px 0 0;
+    padding: 0;
+    overflow-wrap: anywhere;
   }
   .art13 .imgs {
     width: 100%;
